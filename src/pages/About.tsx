@@ -7,9 +7,8 @@ export default function About() {
             Robotics · Control · AI
           </p>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-tight mb-4">
-            I design reliable control and AI systems{" "}
+            Robotics | Controls | Dynamics | AI | Machine Learning | Data Science{" "}
             <span className="text-sky-400">
-              for real hardware.
             </span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-slate-300 mb-8 max-w-2xl">
