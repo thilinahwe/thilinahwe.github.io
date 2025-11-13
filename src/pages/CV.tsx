@@ -1,30 +1,49 @@
 export default function CV() {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-4">Curriculum Vitae</h1>
-      <p className="mb-4 text-neutral-700 dark:text-neutral-300 max-w-2xl">
-        I maintain separate industry-focused and academic versions of my CV.
-        You can download either version below as a PDF.
-      </p>
+    <section className="bg-neutral-950 text-neutral-50">
+      <div className="max-w-6xl mx-auto px-4 py-16 sm:py-20">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">
+            Curriculum Vitae
+          </h1>
+          <p className="text-sm sm:text-base text-neutral-300 mb-8">
+            I maintain separate industry-focused and academic versions of my CV.
+            Use the buttons below to download the version that best matches your
+            needs.
+          </p>
 
-      <div className="flex flex-wrap gap-3">
-        <a
-          href="/assets/Thilina Weerakkody_CV.pdf"
-          className="inline-flex items-center px-4 py-2 rounded-md bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 text-sm font-medium"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Download Industry CV (PDF)
-        </a>
+          {/* Button block */}
+          <div className="flex flex-col sm:flex-row gap-4 mb-10">
+            <a
+              href="/assets/Thilina Weerakkody_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="flex-1 inline-flex items-center justify-center rounded-full
+                         bg-sky-500 text-sm font-medium text-white py-3.5 px-6
+                         shadow-lg shadow-sky-500/30 hover:bg-sky-400 transition-colors"
+            >
+              Download Industry CV
+            </a>
+            <a
+              href="/assets/Thilina_Weerakkody_Academic_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="flex-1 inline-flex items-center justify-center rounded-full
+                         bg-sky-500 text-sm font-medium text-white py-3.5 px-6
+                         shadow-lg shadow-sky-500/30 hover:bg-sky-400 transition-colors"
+            >
+              Download Academic CV
+            </a>
+          </div>
 
-        <a
-          href="/assets/Thilina_Weerakkody_Academic_CV.pdf"
-          className="inline-flex items-center px-4 py-2 rounded-md bg-neutral-100 text-neutral-900 border border-neutral-200 dark:bg-neutral-900 dark:text-neutral-100 dark:border-neutral-700 text-sm font-medium"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Download Academic CV (PDF)
-        </a>
+          {/* Optional small text under buttons */}
+          <p className="text-xs text-neutral-500">
+            The industry CV emphasizes applied robotics, control, and software
+            skills suited for engineering and data roles. The academic CV
+            includes full publication, teaching, and service records for faculty
+            applications.
+          </p>
+        </div>
       </div>
     </section>
   );
