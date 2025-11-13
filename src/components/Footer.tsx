@@ -8,7 +8,7 @@ export default function Footer() {
             href="https://github.com/thilinahwe"
             target="_blank"
             rel="noreferrer"
-            className="hover:underline"
+            className="hover:text-sky-600 dark:hover:text-sky-400"
           >
             GitHub
           </a>
@@ -16,7 +16,7 @@ export default function Footer() {
             href="https://scholar.google.com/citations?user=zb07m3UAAAAJ"
             target="_blank"
             rel="noreferrer"
-            className="hover:underline"
+            className="hover:text-sky-600 dark:hover:text-sky-400"
           >
             Google Scholar
           </a>
@@ -24,7 +24,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/thilinahw"
             target="_blank"
             rel="noreferrer"
-            className="hover:underline"
+            className="hover:text-sky-600 dark:hover:text-sky-400"
           >
             LinkedIn
           </a>

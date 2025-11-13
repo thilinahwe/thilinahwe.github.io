@@ -1,17 +1,26 @@
 export default function About() {
   return (
     <section className="bg-gradient-to-b from-slate-950 via-slate-900 to-black text-slate-50">
-      <div className="max-w-6xl mx-auto px-4 py-16 sm:py-24">
-        <div className="max-w-3xl">
-          <p className="text-xs uppercase tracking-[0.25em] text-slate-400 mb-3">
-            Robotics · Control · AI
+      <div className="max-w-6xl mx-auto px-4 py-16 sm:py-24 relative overflow-hidden">
+        {/* Glazed gradient line in the background */}
+        <div
+          className="pointer-events-none absolute -top-8 left-1/2 h-28 w-[140%] -translate-x-1/2
+                     bg-gradient-to-r from-sky-500 via-fuchsia-500 to-emerald-400
+                     opacity-30 blur-3xl"
+        />
+        {/* Slight vignette at bottom */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/60 to-transparent" />
+
+        <div className="relative max-w-3xl">
+          <p className="text-xs uppercase tracking-[0.25em] text-slate-300 mb-3">
+            R O B O T I C S · C O N T R O L · A I
           </p>
+
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-tight mb-4">
-            Robotics | Controls | Dynamics | AI | Machine Learning | Data Science{" "}
-            <span className="text-sky-400">
-            </span>
+            Robotics | Controls | Dynamics | AI | Machine Learning | Data Science
           </h1>
-          <p className="text-sm sm:text-base md:text-lg text-slate-300 mb-8 max-w-2xl">
+
+          <p className="text-sm sm:text-base md:text-lg text-slate-200 mb-8 max-w-2xl">
             I am a mechanical engineer and postdoctoral researcher at UCLA,
             working at the intersection of robotics, robust/adaptive control,
             and physics-informed machine learning for medical and
@@ -33,18 +42,22 @@ export default function About() {
             </a>
           </div>
 
-          <div className="flex flex-wrap gap-4 text-xs text-slate-400">
+          <div className="flex flex-wrap gap-6 text-xs text-slate-300">
             <div>
-              <div className="font-semibold text-slate-200">
+              <div className="font-semibold text-slate-100 mb-1">
                 Core areas
               </div>
-              <div>Robotics, L₁ adaptive control, PIML, high-throughput systems</div>
+              <div>
+                Robotics, L₁ adaptive control, PIML, high-throughput systems
+              </div>
             </div>
             <div>
-              <div className="font-semibold text-slate-200">
+              <div className="font-semibold text-slate-100 mb-1">
                 Tools
               </div>
-              <div>Python, MATLAB/Simulink, ROS/ROS2, LabVIEW, C++, SolidWorks</div>
+              <div>
+                Python, MATLAB/Simulink, ROS/ROS2, LabVIEW, C++, SolidWorks
+              </div>
             </div>
           </div>
         </div>

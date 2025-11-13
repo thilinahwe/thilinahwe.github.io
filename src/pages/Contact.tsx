@@ -9,7 +9,7 @@ export default function Contact() {
         <li>
           <a
             href="mailto:TWeerakkody@mednet.ucla.edu"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-sky-600 dark:text-sky-400 hover:underline"
           >
             TWeerakkody@mednet.ucla.edu
           </a>
@@ -17,7 +17,7 @@ export default function Contact() {
         <li>
           <a
             href="mailto:thilinahweerakkody@gmail.com"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-sky-600 dark:text-sky-400 hover:underline"
           >
             thilinahweerakkody@gmail.com
           </a>
@@ -27,7 +27,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/thilinahw"
             target="_blank"
             rel="noreferrer"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-sky-600 dark:text-sky-400 hover:underline"
           >
             LinkedIn Profile
           </a>
