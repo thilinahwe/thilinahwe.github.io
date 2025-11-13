@@ -15,7 +15,7 @@ export default function Contact() {
               collaborations, research projects, and consulting.
             </p>
 
-            {/* Social icons as simple text links for now */}
+            {/* Social badges */}
             <div className="flex flex-wrap gap-3 text-xs text-neutral-400">
               <a
                 href="https://github.com/thilinahwe"
@@ -44,7 +44,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right: simple contact panel */}
+          {/* Right: contact panel */}
           <div className="rounded-2xl bg-neutral-900/80 border border-neutral-800 p-5 sm:p-6">
             <h3 className="text-sm font-medium text-neutral-200 mb-4">
               Get in touch
@@ -74,15 +74,14 @@ export default function Contact() {
               </div>
               <div className="pt-2">
                 <p className="text-xs text-neutral-500">
-                  For formal academic correspondence, you may also reference my
-                  academic CV and teaching page.
+                  For formal academic correspondence, you may also reference my Resume.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom: Let's work together block */}
+        {/* Middle: Let's work together block */}
         <div className="grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,1.4fr)] items-start">
           <div>
             <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
@@ -153,15 +152,82 @@ export default function Contact() {
                 >
                   Google Scholar
                 </a>
-                <a
-                  href="https://www.vandamlab.org/lab-members"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="block hover:text-sky-400"
-                >
-                  Lab page
-                </a>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom: Online profiles (primary + additional) */}
+        <div className="border-t border-neutral-800 pt-10">
+          <h2 className="text-sm font-semibold text-neutral-200 mb-4 uppercase tracking-wide">
+            Online profiles
+          </h2>
+
+          {/* Additional academic profiles */}
+          <div className="space-y-2 text-xs text-neutral-400">
+            <div className="text-neutral-500 mb-1">
+              Additional academic / institutional profiles:
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://www.researchgate.net/profile/Thilina-Weerakkody"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 hover:border-sky-500 hover:text-sky-300 transition-colors"
+              >
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-[11px] font-semibold text-neutral-100">
+                  RG
+                </span>
+                <span>ResearchGate</span>
+              </a>
+
+              <a
+                href="https://iihr.uiowa.edu/people/thilina-weerakkody/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 hover:border-sky-500 hover:text-sky-300 transition-colors"
+              >
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-[11px] font-semibold text-neutral-100">
+                  UI
+                </span>
+                <span>IIHR – University of Iowa</span>
+              </a>
+
+              <a
+                href="https://sciprofiles.com/profile/thilina-h-weerakkody"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 hover:border-sky-500 hover:text-sky-300 transition-colors"
+              >
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-[11px] font-semibold text-neutral-100">
+                  SP
+                </span>
+                <span>SciProfiles</span>
+              </a>
+
+              <a
+                href="https://pharmacology.ucla.edu/people/thilina-weerakkody"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 hover:border-sky-500 hover:text-sky-300 transition-colors"
+              >
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-[11px] font-semibold text-neutral-100">
+                  UCLA
+                </span>
+                <span>UCLA Pharmacology</span>
+              </a>
+
+              <a
+                href="https://www.vandamlab.org/lab-members"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 hover:border-sky-500 hover:text-sky-300 transition-colors"
+              >
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-[11px] font-semibold text-neutral-100">
+                  Lab
+                </span>
+                <span>van Dam Lab – UCLA</span>
+              </a>
             </div>
           </div>
         </div>
