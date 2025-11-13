@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Publications from "./pages/Publications";
+// import Publications from "./pages/Publications"; // removed
 import CV from "./pages/CV";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
@@ -18,10 +18,11 @@ function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/publications" element={<Publications />} />
+          {/* <Route path="/publications" element={<Publications />} />  removed */}
           <Route path="/cv" element={<CV />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          {/* Teaching page still exists but is hidden from nav */}
           <Route path="/teaching" element={<Teaching />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
