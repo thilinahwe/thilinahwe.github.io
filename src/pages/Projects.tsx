@@ -9,20 +9,20 @@ type Project = {
 };
 
 const projects: Project[] = [
-  {
-    title: "High-throughput droplet radiochemistry platform (RADBOT)",
-    role: "Postdoctoral Scholar, van Dam Lab, UCLA",
-    years: "2024 – present",
-    location: "Los Angeles, CA",
-    tags: ["Radiochemistry automation", "Robotics", "High-throughput", "Cerenkov imaging"],
-    summary:
-      "Developing an automated droplet-based radiochemistry platform for high-throughput PET radiopharmaceutical development, integrating robotics, LabVIEW control, and in situ imaging.",
-    highlights: [
-      "Designed and documented robotic workflows for up to 64 parallel droplet reactions, including dispensing, heating, imaging, and collection.",
-      "Implemented LabVIEW-based imaging pipelines with ASI cameras, binary image storage, and metadata handling for downstream analysis.",
-      "Collaborating with chemists and engineers to optimize radiosynthesis recipes and in situ readout for PET tracer screening."
-    ]
-  },
+  // {
+  //   title: "High-throughput droplet radiochemistry platform (RADBOT)",
+  //   role: "Postdoctoral Scholar, van Dam Lab, UCLA",
+  //   years: "2024 – present",
+  //   location: "Los Angeles, CA",
+  //   tags: ["Radiochemistry automation", "Robotics", "High-throughput", "Cerenkov imaging"],
+  //   summary:
+  //     "Developing an automated droplet-based radiochemistry platform for high-throughput PET radiopharmaceutical development, integrating robotics, LabVIEW control, and in situ imaging.",
+  //   highlights: [
+  //     "Designed and documented robotic workflows for up to 64 parallel droplet reactions, including dispensing, heating, imaging, and collection.",
+  //     "Implemented LabVIEW-based imaging pipelines with ASI cameras, binary image storage, and metadata handling for downstream analysis.",
+  //     "Collaborating with chemists and engineers to optimize radiosynthesis recipes and in situ readout for PET tracer screening."
+  //   ]
+  // },
   {
     title: "Robust control of shape memory alloys for assistive robotics",
     role: "Ph.D. Research, SMMS Lab, University of Iowa",
