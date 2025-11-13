@@ -12,7 +12,7 @@ import Teaching from "./pages/Teaching";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50">
+    <div className="min-h-screen flex flex-col bg-neutral-950 text-neutral-50">
       <NavBar />
       <main className="flex-1">
         <Routes>
@@ -22,9 +22,7 @@ function App() {
           <Route path="/cv" element={<CV />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          {/* Hidden route: not linked in navbar */}
           <Route path="/teaching" element={<Teaching />} />
-          {/* Fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

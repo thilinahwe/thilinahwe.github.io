@@ -2,20 +2,18 @@ import { NavLink, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export default function NavBar() {
-  const [dark, setDark] = useState(false);
-
-  // Load saved theme or system preference on mount
-  useEffect(() => {
+  const [dark, setDark] = useState<boolean>(() => {
+    if (typeof window === "undefined") return true;
     const saved = localStorage.getItem("theme");
-    if (saved) {
-      setDark(saved === "dark");
-    } else if (window.matchMedia?.("(prefers-color-scheme: dark)").matches) {
-      setDark(true);
+    if (saved === "dark" || saved === "light") {
+      return saved === "dark";
     }
-  }, []);
+    // If no saved theme, default to dark
+    return true;
+  });
 
-  // Apply theme class to <html>
   useEffect(() => {
+    if (typeof document === "undefined") return;
     document.documentElement.classList.toggle("dark", dark);
     localStorage.setItem("theme", dark ? "dark" : "light");
   }, [dark]);
