@@ -9,7 +9,7 @@ export default function CV() {
 
       <div className="flex flex-wrap gap-3">
         <a
-          href="/assets/Thilina_Weerakkody_CV.pdf"
+          href="/assets/Thilina Weerakkody_CV.pdf"
           className="inline-flex items-center px-4 py-2 rounded-md bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 text-sm font-medium"
           target="_blank"
           rel="noreferrer"
