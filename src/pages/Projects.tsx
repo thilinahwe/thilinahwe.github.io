@@ -1,3 +1,5 @@
+import HeadMeta from "../components/HeadMeta";
+
 type Project = {
   title: string;
   role: string;
@@ -94,81 +96,87 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <section className="bg-neutral-950 text-neutral-50">
-      <div className="max-w-6xl mx-auto px-4 py-16 sm:py-20">
-        {/* Page header */}
-        <header className="mb-12">
-          <p className="text-xs uppercase tracking-[0.25em] text-neutral-400 mb-3">
-            S E L E C T E D &nbsp; P R O J E C T S
-          </p>
-          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-3">
-            Projects in robotics, control, and high-throughput systems
-          </h1>
-          <p className="text-sm sm:text-base text-neutral-300 max-w-3xl">
-            This page highlights a selection of projects spanning soft robotics,
-            adaptive control, assistive devices, and high-throughput
-            radiochemistry automation. I will continue to expand this section
-            with animations, GitHub repositories, and interactive demos.
-          </p>
-        </header>
+    <>
+      <HeadMeta
+        title="Projects | Thilina Weerakkody"
+        description="Selected projects in robotics, control, soft actuators, and high-throughput experimental platforms."
+      />
 
-        {/* Project list */}
-        <div className="space-y-10 sm:space-y-12">
-          {projects.map((project) => (
-            <article
-              key={project.title}
-              className="border border-neutral-800/80 rounded-2xl bg-neutral-900/50 px-5 py-6 sm:px-7 sm:py-7"
-            >
-              {/* Project header */}
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-3">
-                <h2 className="text-xl sm:text-2xl font-semibold">
-                  {project.title}
-                </h2>
-                <div className="text-xs text-neutral-400">
-                  <span>{project.years}</span>
-                  {project.location && <span className="mx-1.5">·</span>}
-                  {project.location && <span>{project.location}</span>}
+      <section className="bg-neutral-950 text-neutral-50">
+        <div className="max-w-6xl mx-auto px-4 py-16 sm:py-20">
+          {/* Page header */}
+          <header className="mb-12">
+            <p className="text-xs uppercase tracking-[0.25em] text-neutral-400 mb-3">
+              S E L E C T E D &nbsp; P R O J E C T S
+            </p>
+            <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-3">
+              Projects in robotics, control, and high-throughput systems
+            </h1>
+            <p className="text-sm sm:text-base text-neutral-300 max-w-3xl">
+              This page highlights a selection of projects spanning soft robotics,
+              adaptive control, assistive devices, and high-throughput
+              radiochemistry automation. I will continue to expand this section
+              with animations, GitHub repositories, and interactive demos.
+            </p>
+          </header>
+
+          {/* Project list */}
+          <div className="space-y-10 sm:space-y-12">
+            {projects.map((project) => (
+              <article
+                key={project.title}
+                className="border border-neutral-800/80 rounded-2xl bg-neutral-900/50 px-5 py-6 sm:px-7 sm:py-7"
+              >
+                {/* Project header */}
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-3">
+                  <h2 className="text-xl sm:text-2xl font-semibold">
+                    {project.title}
+                  </h2>
+                  <div className="text-xs text-neutral-400">
+                    <span>{project.years}</span>
+                    {project.location && <span className="mx-1.5">·</span>}
+                    {project.location && <span>{project.location}</span>}
+                  </div>
                 </div>
-              </div>
 
-              {/* Role */}
-              <p className="text-xs font-medium uppercase tracking-wide text-neutral-400 mb-3">
-                {project.role}
-              </p>
+                {/* Role */}
+                <p className="text-xs font-medium uppercase tracking-wide text-neutral-400 mb-3">
+                  {project.role}
+                </p>
 
-              {/* Tags */}
-              {project.tags && (
-                <div className="flex flex-wrap gap-2 mb-4 text-[11px]">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2.5 py-1 rounded-full bg-neutral-800 text-neutral-300 border border-neutral-700"
-                    >
-                      {tag}
-                    </span>
+                {/* Tags */}
+                {project.tags && (
+                  <div className="flex flex-wrap gap-2 mb-4 text-[11px]">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2.5 py-1 rounded-full bg-neutral-800 text-neutral-300 border border-neutral-700"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Summary */}
+                <p className="text-sm text-neutral-200 mb-4">{project.summary}</p>
+
+                {/* Highlights */}
+                <ul className="text-sm text-neutral-300 list-disc pl-5 space-y-1.5">
+                  {project.highlights.map((item, idx) => (
+                    <li key={idx}>{item}</li>
                   ))}
+                </ul>
+
+                {/* Placeholder for future animations / links */}
+                <div className="mt-4 text-xs text-neutral-500 italic">
+                  Future updates: add animations, schematics, and GitHub repositories for this project.
                 </div>
-              )}
-
-              {/* Summary */}
-              <p className="text-sm text-neutral-200 mb-4">{project.summary}</p>
-
-              {/* Highlights */}
-              <ul className="text-sm text-neutral-300 list-disc pl-5 space-y-1.5">
-                {project.highlights.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-
-              {/* Placeholder for future animations / links */}
-              <div className="mt-4 text-xs text-neutral-500 italic">
-                {/* You can replace this line with animations, images, or GitHub links later */}
-                Future updates: add animations, schematics, and GitHub repositories for this project.
-              </div>
-            </article>
-          ))}
+              </article>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
