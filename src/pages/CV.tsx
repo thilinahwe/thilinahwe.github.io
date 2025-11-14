@@ -5,7 +5,7 @@ export default function CV() {
     <>
       <HeadMeta
         title="Curriculum Vitae | Thilina Weerakkody"
-        description="Download industry-focused and academic CVs highlighting robotics, control, and high-throughput experimental work."
+        description="Download 1-page Resume and Extended Curriculum Vitae highlighting robotics, control, dynamics and modelling work."
       />
 
       <section className="bg-neutral-950 text-neutral-50">
@@ -15,7 +15,7 @@ export default function CV() {
               Curriculum Vitae
             </h1>
             <p className="text-sm sm:text-base text-neutral-300 mb-8">
-              I maintain separate industry-focused and academic versions of my CV.
+              I maintain separate 1-page Resume and an extended versions of my CV.
               Use the buttons below to download the version that best matches your
               needs.
             </p>
@@ -30,7 +30,7 @@ export default function CV() {
                            bg-sky-500 text-sm font-medium text-white py-3.5 px-6
                            shadow-lg shadow-sky-500/30 hover:bg-sky-400 transition-colors"
               >
-                Download Industry CV
+                Download 1-Page Resume
               </a>
               <a
                 href="/assets/Thilina_Weerakkody_Academic_CV.pdf"
@@ -40,16 +40,15 @@ export default function CV() {
                            bg-sky-500 text-sm font-medium text-white py-3.5 px-6
                            shadow-lg shadow-sky-500/30 hover:bg-sky-400 transition-colors"
               >
-                Download Academic CV
+                Download Extended Curriculum Vitae
               </a>
             </div>
 
             {/* Optional small text under buttons */}
             <p className="text-xs text-neutral-500">
-              The industry CV emphasizes applied robotics, control, and software
-              skills suited for engineering and data roles. The academic CV
-              includes full publication, teaching, and service records for faculty
-              applications.
+              The 1-page emphasizes applied robotics, control, and software
+              skills suited for engineering and data roles. The extended CV
+              includes full publication, teaching, and service records.
             </p>
           </div>
         </div>

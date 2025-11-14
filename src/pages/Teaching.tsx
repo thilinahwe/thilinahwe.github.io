@@ -15,7 +15,7 @@ export default function Teaching() {
   return (
     <>
       <HeadMeta
-        title="Teaching (Private) | Thilina Weerakkody"
+        title="Teaching | Thilina H. Weerakkody"
         description="Private teaching page with academic materials and teaching-focused information for search committees."
       />
 
