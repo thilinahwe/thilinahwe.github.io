@@ -4,7 +4,7 @@ const navLinks = [
   { label: "About", to: "/" },
   { label: "Projects", to: "/projects" },
   // Publications removed
-  { label: "CV", to: "/cv" },
+  { label: "Curriculum Vitae", to: "/cv" },
   { label: "Services", to: "/services" },
   { label: "Contact", to: "/contact" },
 ];
