@@ -109,7 +109,7 @@ export default function Teaching() {
                     </li>
                     <li>
                       <a
-                        href="/Teaching/TCAM_Tutorial_Notebook.ipynb"
+                       href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/TCAM_Tutorial_Notebook.ipynb"
                         target="_blank"
                         rel="noreferrer"
                         className="hover:underline"
