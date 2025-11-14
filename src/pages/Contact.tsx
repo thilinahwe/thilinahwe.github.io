@@ -15,13 +15,14 @@ export default function Contact() {
             {/* Left text block */}
             <div>
               <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
-                Contact me for <span className="text-sky-400">collaboration</span>
+                Contact me!
+                {/* Contact me for <span className="text-sky-400">collaboration</span> */}
               </h2>
-              <p className="text-sm sm:text-base text-neutral-300 mb-6 max-w-md">
+              {/* <p className="text-sm sm:text-base text-neutral-300 mb-6 max-w-md">
                 Reach out if you&apos;d like to discuss robotics, control, AI, or
                 high-throughput experimental platforms. I&apos;m open to industry
                 collaborations, research projects, and consulting.
-              </p>
+              </p> */}
 
               {/* Social badges */}
               <div className="flex flex-wrap gap-3 text-xs text-neutral-400">
@@ -81,10 +82,10 @@ export default function Contact() {
                   </a>
                 </div>
                 <div className="pt-2">
-                  <p className="text-xs text-neutral-500">
+                  {/* <p className="text-xs text-neutral-500">
                     For formal academic correspondence, you may also reference my
                     academic CV and teaching page.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -93,22 +94,22 @@ export default function Contact() {
           {/* Middle: Let's work together block */}
           <div className="grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,1.4fr)] items-start">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
+              {/* <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
                 Let&apos;s work <br className="hidden sm:block" />
                 together today!
-              </h2>
-              <p className="text-sm sm:text-base text-neutral-300 mb-6 max-w-md">
+              </h2> */}
+              {/* <p className="text-sm sm:text-base text-neutral-300 mb-6 max-w-md">
                 Whether it&apos;s a research collaboration, an industry project,
                 or consulting on robotics and control, I&apos;d be happy to
                 discuss how I can help.
-              </p>
+              </p> */}
               <a
                 href="mailto:thilinahweerakkody@gmail.com"
                 className="inline-flex items-center justify-center rounded-full
                            bg-sky-500 text-sm font-medium text-white py-3 px-6
                            shadow-lg shadow-sky-500/30 hover:bg-sky-400 transition-colors"
               >
-                Start a project
+                {/* Start a project */}
               </a>
             </div>
 
@@ -124,7 +125,10 @@ export default function Contact() {
                     Projects
                   </a>
                   <a href="#/cv" className="block hover:text-sky-400">
-                    CV
+                    Curriculum Vitae
+                  </a>
+                  <a href="#/services" className="block hover:text-sky-400">
+                    Services
                   </a>
                   <a href="#/contact" className="block hover:text-sky-400">
                     Contact
