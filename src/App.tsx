@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import CV from "./pages/CV";
 import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import Teaching from "./pages/Teaching";
 import SocialStrip from "./components/SocialStrip";
 
