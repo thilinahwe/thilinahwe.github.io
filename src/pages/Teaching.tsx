@@ -32,7 +32,7 @@ export default function Teaching() {
 
             <div className="flex flex-wrap gap-3">
               <a
-                href="/assets/Thilina_Weerakkody_Academic_CV.pdf"
+                href="/assets/CV-Thilina-Hemaka-Weerakkody.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full
