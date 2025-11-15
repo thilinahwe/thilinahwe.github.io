@@ -43,7 +43,7 @@ export default function Teaching() {
               </a>
 
               <a
-                href="/assets/Teaching%20Statement.pdf"
+                href="/assets/Teaching-Statement.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full
