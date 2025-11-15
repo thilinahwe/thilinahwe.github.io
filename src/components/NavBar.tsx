@@ -38,7 +38,14 @@ export default function NavBar() {
   };
 
   return (
-    <header className="border-b border-neutral-200 bg-neutral-50/80 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90">
+    <header
+      className="
+        fixed top-0 inset-x-0 z-50
+        border-b border-neutral-200 bg-neutral-50/80 backdrop-blur
+        dark:border-neutral-800 dark:bg-neutral-950/90
+        shadow-sm
+      "
+    >
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Left: Name */}
         <a

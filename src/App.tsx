@@ -1,32 +1,41 @@
+// src/App.tsx
 import { Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-// import Publications from "./pages/Publications"; // removed
 import CV from "./pages/CV";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Teaching from "./pages/Teaching";
+import SocialStrip from "./components/SocialStrip";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50">
+    <div className="h-screen flex flex-col bg-neutral-50 dark:bg-neutral-950">
+      {/* Header stays at top */}
       <NavBar />
-      <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          {/* <Route path="/publications" element={<Publications />} /> */}
-          <Route path="/cv" element={<CV />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* Teaching page still exists but is hidden from nav */}
-          <Route path="/teaching" element={<Teaching />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </main>
+
+      {/* Scrollable middle area: all pages + social icons */}
+      <div className="flex-1 overflow-y-auto">
+        <main>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/cv" element={<CV />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/teaching" element={<Teaching />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
+
+        {/* Social icons bar under page, above footer */}
+        <SocialStrip />
+      </div>
+
+      {/* Footer stays at bottom */}
       <Footer />
     </div>
   );

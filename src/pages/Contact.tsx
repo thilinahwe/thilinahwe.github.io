@@ -219,6 +219,19 @@ export default function Contact() {
                   </span>
                   <span>van Dam Lab – UCLA</span>
                 </a>
+
+                {/* IEEE Collabratec moved here from footer */}
+                <a
+                  href="https://ieee-collabratec.ieee.org/app/p/ThilinaWeerakkody55689/about"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border bg-white border-neutral-200 hover:border-sky-500 hover:text-sky-600 transition-colors dark:bg-neutral-900 dark:border-neutral-800 dark:hover:border-sky-500 dark:hover:text-sky-300"
+                >
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-100 text-[11px] font-semibold text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100">
+                    IEEE
+                  </span>
+                  <span>IEEE Collabratec</span>
+                </a>
               </div>
             </div>
           </div>
