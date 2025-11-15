@@ -19,11 +19,11 @@ export default function Teaching() {
         description="Teaching experience, courses, and mentoring by Thilina H. Weerakkody. This page is intended for academic search committees and teaching-related audiences."
       />
 
-      <section className="bg-neutral-950 text-neutral-50">
+      <section className="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50">
         <div className="max-w-6xl mx-auto px-4 py-16 sm:py-20">
           {/* Page header */}
           <header className="mb-10">
-            <p className="text-xs uppercase tracking-[0.25em] text-neutral-400 mb-3">
+            <p className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 mb-3">
               T E A C H I N G
             </p>
             <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">
@@ -58,16 +58,15 @@ export default function Teaching() {
           {/* Teaching experience sections */}
           <div className="space-y-10">
             {/* University of Iowa */}
-            <section className="border border-neutral-800/70 rounded-2xl bg-neutral-900/40 p-5 sm:p-6">
+            <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
                 University of Iowa — Graduate Teaching Assistant
               </h2>
-              <p className="text-xs font-medium uppercase tracking-wide text-neutral-400 mb-4">
+              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-4">
                 Department of Mechanical Engineering
               </p>
 
-              {/* Course + terms */}
-              <ul className="text-sm text-neutral-200 space-y-2 mb-4">
+              <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 mb-4">
                 <li>
                   <span className="font-semibold">
                     ME6130: Novel Artificial Muscles &amp; Sensors
@@ -75,18 +74,18 @@ export default function Teaching() {
                   — Tutorial / lab sessions on MATLAB/Simulink for mathematical
                   modeling of twisted and coiled artificial muscles (TCAMs).
                 </li>
-                <li className="text-neutral-400">
-                  <span className="font-semibold">Offered:</span> Spring 2023, Spring 2024
+                <li className="text-neutral-600 dark:text-neutral-400">
+                  <span className="font-semibold">Offered:</span> Spring 2023, Spring
+                  2024
                 </li>
               </ul>
 
-              {/* Resources for the TCAM lab */}
               <div className="space-y-3 mb-4">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400 mb-1">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-1">
                     TCAM lab tutorial materials (Spring 2023–2024)
                   </div>
-                  <ul className="text-sm text-sky-300 space-y-1 list-disc pl-4">
+                  <ul className="text-sm text-sky-700 dark:text-sky-300 space-y-1 list-disc pl-4">
                     <li>
                       <a
                         href="/Teaching/TCAM_Lab_Tutorial.pdf"
@@ -109,7 +108,7 @@ export default function Teaching() {
                     </li>
                     <li>
                       <a
-                       href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/TCAM_Tutorial_Notebook.ipynb"
+                        href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/TCAM_Tutorial_Notebook.ipynb"
                         target="_blank"
                         rel="noreferrer"
                         className="hover:underline"
@@ -125,7 +124,7 @@ export default function Teaching() {
                         className="hover:underline"
                       >
                         MATLAB / Simulink code folder
-                        <span className="text-xs text-neutral-400">
+                        <span className="text-xs text-neutral-500 dark:text-neutral-400">
                           {" "}
                           (loadTCAMParameters.m, Sim_model_LS.slx, plotting scripts)
                         </span>
@@ -135,7 +134,7 @@ export default function Teaching() {
                 </div>
               </div>
 
-              <p className="text-sm text-neutral-300">
+              <p className="text-sm text-neutral-700 dark:text-neutral-300">
                 I conducted a lab session demonstrating the fabrication methods for
                 artificial muscles, followed by an experiment using carbon-fiber and
                 nylon TCAMs. Each sample underwent two actuation cycles under
@@ -147,23 +146,23 @@ export default function Teaching() {
             </section>
 
             {/* SLIIT — Instructor & Lab Manager */}
-            <section className="border border-neutral-800/70 rounded-2xl bg-neutral-900/40 p-5 sm:p-6">
+            <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
                 SLIIT, Sri Lanka — Instructor & Mechatronics Lab Manager
               </h2>
-              <p className="text-xs font-medium uppercase tracking-wide text-neutral-400 mb-4">
+              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-4">
                 Instructor (Assistant Lecturer), Mechanical Engineering · 2018–2019
               </p>
 
-              <div className="grid gap-4 md:grid-cols-2 text-sm text-neutral-200 mb-6">
+              <div className="grid gap-4 md:grid-cols-2 text-sm text-neutral-800 dark:text-neutral-200 mb-6">
                 <div>
-                  <div className="font-semibold text-neutral-100 mb-1">
+                  <div className="font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
                     Lecture & tutorial courses
                   </div>
                   <ul className="space-y-1.5 list-disc pl-4">
                     <li>
                       ME2021: Mechanics of Machines
-                      <ul className="pl-5 space-y-1 text-sky-300 list-disc">
+                      <ul className="pl-5 space-y-1 text-sky-700 dark:text-sky-300 list-disc">
                         <li>
                           <a
                             href="/Teaching/ME2021-Lecturers.pdf"
@@ -188,7 +187,7 @@ export default function Teaching() {
                     </li>
                     <li>
                       ME2031: Engineering Drawing
-                      <ul className="pl-5 space-y-1 text-sky-300 list-disc">
+                      <ul className="pl-5 space-y-1 text-sky-700 dark:text-sky-300 list-disc">
                         <li>
                           <a
                             href="/Teaching/ME2031 - ED Assignments.pdf"
@@ -223,7 +222,7 @@ export default function Teaching() {
                     </li>
                     <li>
                       ME3531: Solid Mechanics &amp; Mechanical Design
-                      <ul className="pl-5 space-y-1 text-sky-300 list-disc">
+                      <ul className="pl-5 space-y-1 text-sky-700 dark:text-sky-300 list-disc">
                         <li>
                           <a
                             href="/Teaching/ME3531 Notes.pdf"
@@ -262,7 +261,7 @@ export default function Teaching() {
                 </div>
 
                 <div>
-                  <div className="font-semibold text-neutral-100 mb-1">
+                  <div className="font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
                     Mechatronics lab management
                   </div>
                   <ul className="space-y-1.5 list-disc pl-4">
@@ -284,23 +283,22 @@ export default function Teaching() {
             </section>
 
             {/* University of Moratuwa — GTA & Research Assistant Teaching */}
-            <section className="border border-neutral-800/70 rounded-2xl bg-neutral-900/40 p-5 sm:p-6">
+            <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
                 University of Moratuwa — Graduate Teaching Assistant
               </h2>
-              <p className="text-xs font-medium uppercase tracking-wide text-neutral-400 mb-4">
+              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-4">
                 Graduate Teaching Assistant &amp; Research Assistant · 2016–2018
               </p>
-              <p className="text-sm text-neutral-300 mb-3">
+              <p className="text-sm text-neutral-700 dark:text-neutral-300 mb-3">
                 As a Graduate Teaching Assistant in Mechanical Engineering, I supported
                 both undergraduate and graduate courses, focusing on mechatronics,
                 manufacturing, MEMS/NEMS modeling, and automation.
               </p>
 
-              <div className="grid gap-4 md:grid-cols-2 text-sm text-neutral-200">
-                {/* Undergraduate courses */}
+              <div className="grid gap-4 md:grid-cols-2 text-sm text-neutral-800 dark:text-neutral-200">
                 <div>
-                  <div className="font-semibold text-neutral-100 mb-1">
+                  <div className="font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
                     Selected courses (undergraduate)
                   </div>
                   <ul className="space-y-1.5 list-disc pl-4">
@@ -317,9 +315,8 @@ export default function Teaching() {
                   </ul>
                 </div>
 
-                {/* Graduate course */}
                 <div>
-                  <div className="font-semibold text-neutral-100 mb-1">
+                  <div className="font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
                     Graduate-level teaching support
                   </div>
                   <ul className="space-y-1.5 list-disc pl-4">
@@ -330,12 +327,12 @@ export default function Teaching() {
             </section>
 
             {/* Teaching-related training & certification */}
-            <section className="border border-neutral-800/70 rounded-2xl bg-neutral-900/40 p-5 sm:p-6">
+            <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
                 Teaching-related training &amp; certification
               </h2>
 
-              <ul className="text-sm text-neutral-200 space-y-2 mb-3 list-disc pl-4">
+              <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 mb-3 list-disc pl-4">
                 <li>
                   <span className="font-semibold">
                     Certificate in Teaching Methodology in Higher Education
@@ -345,14 +342,13 @@ export default function Teaching() {
                 </li>
               </ul>
 
-              <p className="text-sm text-neutral-300 mb-4">
+              <p className="text-sm text-neutral-700 dark:text-neutral-300 mb-4">
                 This certification emphasized student-centered pedagogy, assessment
                 design, and effective use of technology in engineering education.
               </p>
 
-              {/* Certificate PDF Links */}
-              <div className="mt-3 space-y-2 text-sm text-sky-300">
-                <span className="text-xs uppercase tracking-wide text-neutral-400">
+              <div className="mt-3 space-y-2 text-sm text-sky-700 dark:text-sky-300">
+                <span className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                   Certification documents
                 </span>
                 <ul className="list-disc pl-4 space-y-1">
@@ -381,13 +377,12 @@ export default function Teaching() {
             </section>
 
             {/* Mentoring & supervision */}
-            <section className="border border-neutral-800/70 rounded-2xl bg-neutral-900/40 p-5 sm:p-6">
+            <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
                 Mentoring &amp; supervision
               </h2>
 
-              {/* Overview paragraph */}
-              <p className="text-sm text-neutral-300 mb-3">
+              <p className="text-sm text-neutral-700 dark:text-neutral-300 mb-3">
                 Across my roles at the University of Iowa, the University of Moratuwa,
                 and UCLA, I have mentored and trained more than 12 students
                 (undergraduate students, graduate students, and visiting scholars) in
@@ -398,12 +393,11 @@ export default function Teaching() {
                 multi-institution engineering and medical robotics projects.
               </p>
 
-              {/* Academic mentoring */}
               <div className="mb-4">
-                <h3 className="text-sm font-semibold text-neutral-100 mb-1">
+                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
                   Academic mentoring (University of Iowa, University of Moratuwa, UCLA)
                 </h3>
-                <ul className="text-sm text-neutral-200 space-y-2 list-disc pl-4">
+                <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 list-disc pl-4">
                   <li>
                     Mentored 12 students in the SMMS Lab (UIowa) on SMA/TCAM modeling,
                     robust/adaptive control design, mechatronics integration, and
@@ -425,13 +419,12 @@ export default function Teaching() {
                 </ul>
               </div>
 
-              {/* Industry / startup collaboration mentoring */}
               <div className="mb-4">
-                <h3 className="text-sm font-semibold text-neutral-100 mb-1">
+                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
                   Industry &amp; startup mentoring (Yantra – UIowa Carver College of
                   Medicine)
                 </h3>
-                <ul className="text-sm text-neutral-200 space-y-2 list-disc pl-4">
+                <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 list-disc pl-4">
                   <li>
                     Trained three research engineers from Yantra Life Sciences (UIowa
                     Med School startup) on hardware setup, TCAM-based actuation
@@ -446,12 +439,11 @@ export default function Teaching() {
                 </ul>
               </div>
 
-              {/* Cross-department research project mentoring */}
               <div className="mb-4">
-                <h3 className="text-sm font-semibold text-neutral-100 mb-1">
+                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
                   Cross-department research mentoring (Toxicology × Engineering project)
                 </h3>
-                <ul className="text-sm text-neutral-200 space-y-2 list-disc pl-4">
+                <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 list-disc pl-4">
                   <li>
                     Mentored two undergraduate students on the automated immunolabeling
                     system (a multidisciplinary collaboration described in my CV’s
@@ -461,7 +453,7 @@ export default function Teaching() {
                 </ul>
               </div>
 
-              <p className="text-xs text-neutral-500 mt-3">
+              <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-3">
                 A detailed list of mentored students and collaborative projects can be
                 provided upon request in application materials.
               </p>

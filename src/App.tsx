@@ -12,13 +12,13 @@ import Teaching from "./pages/Teaching";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-neutral-950 text-neutral-50">
+    <div className="min-h-screen flex flex-col bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50">
       <NavBar />
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          {/* <Route path="/publications" element={<Publications />} />  removed */}
+          {/* <Route path="/publications" element={<Publications />} /> */}
           <Route path="/cv" element={<CV />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />

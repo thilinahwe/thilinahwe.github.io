@@ -8,13 +8,13 @@ export default function CV() {
         description="Download 1-page Resume and Extended Curriculum Vitae highlighting robotics, control, dynamics and modelling work."
       />
 
-      <section className="bg-neutral-950 text-neutral-50">
+      <section className="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50">
         <div className="max-w-6xl mx-auto px-4 py-16 sm:py-20">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">
+            <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4 text-neutral-900 dark:text-neutral-50">
               Curriculum Vitae
             </h1>
-            <p className="text-sm sm:text-base text-neutral-300 mb-8">
+            <p className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 mb-8">
               I maintain a separate 1-page Resume and an extended version of my CV.
               Use the buttons below to download the version that best matches your
               needs.
@@ -45,7 +45,7 @@ export default function CV() {
             </div>
 
             {/* Optional small text under buttons */}
-            <p className="text-xs text-neutral-500">
+            <p className="text-xs text-neutral-600 dark:text-neutral-500">
               The 1-page emphasizes applied robotics, control, and software
               skills suited for engineering and data roles. The extended CV
               includes full publication, teaching, and service records.
