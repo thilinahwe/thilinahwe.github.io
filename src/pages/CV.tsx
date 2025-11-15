@@ -15,7 +15,7 @@ export default function CV() {
               Curriculum Vitae
             </h1>
             <p className="text-sm sm:text-base text-neutral-300 mb-8">
-              I maintain separate 1-page Resume and an extended versions of my CV.
+              I maintain a separate 1-page Resume and an extended version of my CV.
               Use the buttons below to download the version that best matches your
               needs.
             </p>
@@ -33,7 +33,7 @@ export default function CV() {
                 Download 1-Page Resume
               </a>
               <a
-                href="/assets/Thilina_Weerakkody_Academic_CV.pdf"
+                href="/assets/CV-Thilina-Hemaka-Weerakkody.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 inline-flex items-center justify-center rounded-full
