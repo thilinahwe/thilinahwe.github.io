@@ -25,7 +25,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/cv" element={<CV />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/contact" element={<Contact />} /> */}
             <Route path="/teaching" element={<Teaching />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

@@ -6,7 +6,7 @@ const navLinks = [
   { label: "Projects", to: "/projects" },
   { label: "Curriculum Vitae", to: "/cv" },
   { label: "Services", to: "/services" },
-  { label: "Contact", to: "/contact" },
+  // { label: "Contact", to: "/contact" },
 ];
 
 export default function NavBar() {
