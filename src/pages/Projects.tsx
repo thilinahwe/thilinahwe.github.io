@@ -1,3 +1,4 @@
+// src/pages/Projects.tsx
 import HeadMeta from "../components/HeadMeta";
 
 type Project = {
@@ -8,10 +9,9 @@ type Project = {
   tags?: string[];
   summary: string;
   highlights: string[];
+  image?: string; // future: per-project image / animation
 };
 
-// You can later mix in “publication-style” entries here as well
-// by either adding a "type" field or treating each paper as a "project".
 const projects: Project[] = [
   {
     title: "High-throughput droplet radiochemistry platform for PET",
@@ -24,7 +24,7 @@ const projects: Project[] = [
     highlights: [
       "Integrated multi-axis robotic motion, heating, dispensing, and imaging into a programmable high-throughput workflow.",
       "Working on quantitative Cerenkov/scintillation image acquisition for in situ radioactivity readout.",
-      "Building analysis pipelines and control logic for automated reaction screening and optimization."
+      "Building analysis pipelines and control logic for automated reaction screening and optimization.",
     ],
   },
   {
@@ -38,7 +38,7 @@ const projects: Project[] = [
     highlights: [
       "Formulated and validated dynamic models for electrically actuated SMA wires, capturing electro-thermo-mechanical coupling and hysteresis.",
       "Designed robust and adaptive controllers for SMA-driven joints, with experimental validation on benchtop setups and proof-of-concept devices.",
-      "Contributed to an accepted journal article in Shape Memory and Superelasticity on robust SMA control for assistive applications."
+      "Contributed to an accepted journal article in Shape Memory and Superelasticity on robust SMA control for assistive applications.",
     ],
   },
   {
@@ -51,7 +51,7 @@ const projects: Project[] = [
     highlights: [
       "Developed a low-cost continuum soft robotic arm powered by TCAMs, including modeling, control, and hardware testing.",
       "Contributed to octopus-inspired muscular hydrostats and tentacle-like actuators for underwater vehicle maneuvering and flow control.",
-      "Led or co-authored several journal and conference publications on TCAM manufacturing, behavior, and control in soft robots."
+      "Led or co-authored several journal and conference publications on TCAM manufacturing, behavior, and control in soft robots.",
     ],
   },
   {
@@ -64,7 +64,7 @@ const projects: Project[] = [
     highlights: [
       "Contributed to the design and experimental characterization of a wrist rehabilitation exoskeleton powered by TCAM actuators.",
       "Collaborated on system integration, control strategies, and dynamic modeling for wearable rehabilitation devices.",
-      "Supported publications in Robotics and other venues, including an Editor’s Choice article on TCAM-powered exoskeletons."
+      "Supported publications in Robotics and other venues, including an Editor’s Choice article on TCAM-powered exoskeletons.",
     ],
   },
   {
@@ -78,7 +78,7 @@ const projects: Project[] = [
     highlights: [
       "Developed and analyzed adaptive foot mechanisms for prosthetic applications, incorporating compliant and articulated structures.",
       "Prototyped and tested components using 3D printing and conventional manufacturing techniques.",
-      "Co-authored work on adaptive feet for lower-limb prostheses in the Journal of Robotics."
+      "Co-authored work on adaptive feet for lower-limb prostheses in the Journal of Robotics.",
     ],
   },
   {
@@ -91,12 +91,12 @@ const projects: Project[] = [
     highlights: [
       "Developed a modular mechanical architecture for an artificial shoulder joint with multiple rotational degrees of freedom.",
       "Implemented basic control strategies and validated joint-level performance on a benchtop prototype.",
-      "Presented results in international conferences focusing on modeling, identification, and control."
+      "Presented results in international conferences focusing on modeling, identification, and control.",
     ],
   },
 ];
 
-// Helper: group projects by end year (last 4-digit year in the "years" string)
+// Group by end year (last 4-digit year in the string)
 function groupProjectsByEndYear(list: Project[]) {
   const byYear: Record<string, Project[]> = {};
 
@@ -107,7 +107,6 @@ function groupProjectsByEndYear(list: Project[]) {
     byYear[yearKey].push(p);
   });
 
-  // Sort years descending (newest first)
   const sortedYears = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
   return { byYear, sortedYears };
 }
@@ -124,13 +123,13 @@ export default function Projects() {
 
       <section className="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50">
         <div className="max-w-6xl mx-auto px-4 py-16 sm:py-20 space-y-10">
-          {/* Page header */}
+          {/* Header */}
           <header className="space-y-3">
             <p className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400">
               P R O J E C T S
             </p>
             <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-50">
-              Projects & research highlights
+              Projects &amp; research highlights
             </h1>
             <p className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 max-w-3xl">
               A selection of ongoing and past projects spanning soft robotics,
@@ -140,87 +139,86 @@ export default function Projects() {
             </p>
           </header>
 
-          {/* Hero / animation placeholder */}
-          <div
-            className="
-              w-full rounded-3xl
-              bg-gradient-to-r from-sky-500 via-cyan-400 to-emerald-400
-              dark:from-sky-500 dark:via-fuchsia-500 dark:to-emerald-400
-              aspect-[16/5]
-              flex items-center justify-center
-              text-xs sm:text-sm font-medium text-white/90
-              shadow-lg shadow-sky-500/30
-            "
-          >
-            {/* Replace this with an animation or project image */}
-            Future: animation or hero image illustrating my robotics & control work
-          </div>
-
-          {/* Year-separated list (no boxes) */}
+          {/* Year-separated list, year shown once per group (right-aligned) */}
           <div className="space-y-10">
             {sortedYears.map((year, idx) => (
               <section
                 key={year}
-                className={`pt-6 ${
-                  idx === 0 ? "border-t border-neutral-200 dark:border-neutral-800" : "border-t border-neutral-200 dark:border-neutral-800"
-                }`}
+                className="pt-6 border-t border-neutral-200 dark:border-neutral-800"
               >
-                <div className="flex gap-6">
-                  {/* Left: Year label */}
-                  <div className="w-16 shrink-0 pt-1 text-xs font-semibold tracking-wide text-neutral-500 dark:text-neutral-400">
+                {/* Year label, right-aligned, bigger font (Charith-style) */}
+                <div className="flex justify-end mb-4">
+                  <span className="text-base sm:text-2xl font-semibold text-neutral-400 dark:text-neutral-500">
                     {year}
-                  </div>
+                  </span>
+                </div>
 
-                  {/* Right: all projects for that year */}
-                  <div className="flex-1 space-y-6">
-                    {byYear[year].map((project) => (
-                      <article key={project.title} className="space-y-1.5">
-                        {/* Title */}
-                        <h2 className="text-sm sm:text-base font-semibold text-neutral-900 dark:text-neutral-50">
-                          {project.title}
-                        </h2>
-
-                        {/* Role / location / years */}
-                        <div className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400">
-                          <span>{project.role}</span>
-                          {project.location && (
-                            <>
-                              {" · "}
-                              <span>{project.location}</span>
-                            </>
+                <div className="space-y-6">
+                  {byYear[year].map((project) => (
+                    <article key={project.title} className="py-1">
+                      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
+                        {/* LEFT: image / animation placeholder (Vindula-style) */}
+                        <div className="w-full sm:w-40 h-28 sm:h-28 rounded-lg overflow-hidden bg-neutral-200/70 dark:bg-neutral-800/70 flex items-center justify-center">
+                          {project.image ? (
+                            <img
+                              src={project.image}
+                              alt={project.title}
+                              className="w-full h-full object-cover"
+                            />
+                          ) : (
+                            <span className="text-[11px] text-neutral-600 dark:text-neutral-400">
+                              Image / animation
+                            </span>
                           )}
-                          {" · "}
-                          <span>{project.years}</span>
                         </div>
 
-                        {/* Tags (simple inline chips) */}
-                        {project.tags && (
-                          <div className="flex flex-wrap gap-1.5 text-[10px] sm:text-[11px] text-neutral-600 dark:text-neutral-400">
-                            {project.tags.map((tag) => (
-                              <span
-                                key={tag}
-                                className="px-2 py-0.5 rounded-full bg-neutral-200/70 dark:bg-neutral-800/70"
-                              >
-                                {tag}
-                              </span>
-                            ))}
+                        {/* RIGHT: text block */}
+                        <div className="flex-1">
+                          {/* Title */}
+                          <h2 className="text-sm sm:text-base font-semibold text-neutral-900 dark:text-neutral-50">
+                            {project.title}
+                          </h2>
+
+                          {/* Role / location (no per-project year here) */}
+                          <div className="mt-1 text-xs sm:text-sm text-neutral-600 dark:text-neutral-400">
+                            <span>{project.role}</span>
+                            {project.location && (
+                              <>
+                                {" · "}
+                                <span>{project.location}</span>
+                              </>
+                            )}
                           </div>
-                        )}
 
-                        {/* Summary */}
-                        <p className="text-xs sm:text-sm text-neutral-700 dark:text-neutral-300 mt-1">
-                          {project.summary}
-                        </p>
+                          {/* Tags */}
+                          {project.tags && (
+                            <div className="mt-1 flex flex-wrap gap-1.5 text-[10px] sm:text-[11px] text-neutral-600 dark:text-neutral-400">
+                              {project.tags.map((tag) => (
+                                <span
+                                  key={tag}
+                                  className="px-2 py-0.5 rounded-full bg-neutral-200/70 dark:bg-neutral-800/70"
+                                >
+                                  {tag}
+                                </span>
+                              ))}
+                            </div>
+                          )}
 
-                        {/* Highlights */}
-                        <ul className="mt-1 list-disc pl-4 space-y-0.5 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
-                          {project.highlights.map((item, i) => (
-                            <li key={i}>{item}</li>
-                          ))}
-                        </ul>
-                      </article>
-                    ))}
-                  </div>
+                          {/* Summary */}
+                          <p className="mt-2 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
+                            {project.summary}
+                          </p>
+
+                          {/* Highlights */}
+                          <ul className="mt-1 list-disc pl-4 space-y-0.5 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
+                            {project.highlights.map((h, i) => (
+                              <li key={i}>{h}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                  ))}
                 </div>
               </section>
             ))}
