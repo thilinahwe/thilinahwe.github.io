@@ -1,3 +1,4 @@
+// src/pages/Teaching.tsx
 import { useEffect } from "react";
 import HeadMeta from "../components/HeadMeta";
 
@@ -60,10 +61,33 @@ export default function Teaching() {
             {/* University of Iowa */}
             <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
-                University of Iowa — Graduate Teaching Assistant
+                University of Iowa, IA - Department of Mechanical Engineering 
+                <a
+                  href="https://me.engineering.uiowa.edu/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="
+                    inline-flex items-center justify-center
+                    ml-1.5 align-middle
+                    text-neutral-500 hover:text-sky-500
+                    dark:text-neutral-400 dark:hover:text-sky-300
+                    transition
+                  "
+                  style={{ position: "relative", top: "1px" }}   // lowers icon slightly
+                  title="Open Department Website"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-4 w-4"
+                  >
+                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z"/>
+                  </svg>
+                </a>
               </h2>
               <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-4">
-                Department of Mechanical Engineering
+                Graduate Teaching Assistant
               </p>
 
               <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 mb-4">
@@ -96,6 +120,7 @@ export default function Teaching() {
                         Lab handout (PDF)
                       </a>
                     </li>
+
                     <li>
                       <a
                         href="/Teaching/TCAM_Lab_Solutions.pdf"
@@ -106,6 +131,7 @@ export default function Teaching() {
                         Sample solutions (PDF)
                       </a>
                     </li>
+
                     <li>
                       <a
                         href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/TCAM_Tutorial_Notebook.ipynb"
@@ -116,18 +142,15 @@ export default function Teaching() {
                         Jupyter tutorial notebook
                       </a>
                     </li>
+
                     <li>
                       <a
-                        href="/Teaching/TCAM_Code/"
+                        href="https://github.com/thilinahwe/thilinahwe.github.io/tree/main/public/Teaching/TCAM_Code"
                         target="_blank"
                         rel="noreferrer"
                         className="hover:underline"
                       >
-                        MATLAB / Simulink code folder
-                        <span className="text-xs text-neutral-500 dark:text-neutral-400">
-                          {" "}
-                          (loadTCAMParameters.m, Sim_model_LS.slx, plotting scripts)
-                        </span>
+                        MATLAB / Simulink code
                       </a>
                     </li>
                   </ul>
@@ -148,16 +171,39 @@ export default function Teaching() {
             {/* SLIIT — Instructor & Lab Manager */}
             <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
-                SLIIT, Sri Lanka — Instructor & Mechatronics Lab Manager
+                SLIIT | Sri Lanka Institute of Information Technology - Mechanical Engineering             
+                  <a
+                  href="https://www.sliit.lk/engineering/programmes/mechanical-engineering-degree/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="
+                    inline-flex items-center justify-center
+                    ml-1.5 align-middle
+                    text-neutral-500 hover:text-sky-500
+                    dark:text-neutral-400 dark:hover:text-sky-300
+                    transition
+                  "
+                  style={{ position: 'relative', top: '1px' }}
+                  title="Open SLIIT Mechanical Engineering Department"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-4 w-4"
+                  >
+                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z"/>
+                  </svg>
+                </a>
               </h2>
               <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-4">
-                Instructor (Assistant Lecturer), Mechanical Engineering · 2018–2019
+                Instructor (Assistant Lecturer) · 2018–2019
               </p>
 
               <div className="grid gap-4 md:grid-cols-2 text-sm text-neutral-800 dark:text-neutral-200 mb-6">
                 <div>
                   <div className="font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
-                    Lecture & tutorial courses
+                    Lecture &amp; tutorial courses
                   </div>
                   <ul className="space-y-1.5 list-disc pl-4">
                     <li>
@@ -285,10 +331,33 @@ export default function Teaching() {
             {/* University of Moratuwa — GTA & Research Assistant Teaching */}
             <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
-                University of Moratuwa — Graduate Teaching Assistant
+                University of Moratuwa, Sri Lanka — Mechanical Engineering
+                <a
+                  href="https://uom.lk/mech"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="
+                    inline-flex items-center justify-center
+                    ml-1.5 align-middle
+                    text-neutral-500 hover:text-sky-500
+                    dark:text-neutral-400 dark:hover:text-sky-300
+                    transition
+                  "
+                  style={{ position: 'relative', top: '1px' }}
+                  title="Open University of Moratuwa Department of Mechanical Engineering"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-4 w-4"
+                  >
+                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z"/>
+                  </svg>
+                </a>
               </h2>
               <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-4">
-                Graduate Teaching Assistant &amp; Research Assistant · 2016–2018
+                Graduate Teaching Assistant · 2016–2018
               </p>
               <p className="text-sm text-neutral-700 dark:text-neutral-300 mb-3">
                 As a Graduate Teaching Assistant in Mechanical Engineering, I supported
@@ -384,7 +453,7 @@ export default function Teaching() {
 
               <p className="text-sm text-neutral-700 dark:text-neutral-300 mb-3">
                 Across my roles at the University of Iowa, the University of Moratuwa,
-                and UCLA, I have mentored and trained more than 12 students
+                and UCLA, I have mentored and trained more than 18 students
                 (undergraduate students, graduate students, and visiting scholars) in
                 project-based and research workflows involving soft robotics, control,
                 mechatronics, artificial muscles, and experimental methods. In
@@ -453,10 +522,10 @@ export default function Teaching() {
                 </ul>
               </div>
 
-              <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-3">
+              {/* <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-3">
                 A detailed list of mentored students and collaborative projects can be
                 provided upon request in application materials.
-              </p>
+              </p> */}
             </section>
           </div>
         </div>

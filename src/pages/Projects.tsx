@@ -93,7 +93,7 @@ export default function Projects() {
           {/* Page header */}
           <header className="mb-12">
             <p className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 mb-3">
-              S E L E C T E D &nbsp; P R O J E C T S
+              P R O J E C T S
             </p>
             <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-3">
               Projects in robotics, control, and high-throughput systems

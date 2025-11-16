@@ -28,12 +28,12 @@ export default function About() {
           <div className="max-w-3xl">
             {/* Subtitle */}
             <p className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-slate-300 mb-3">
-              R O B O T I C S · C O N T R O L · A I
+              R O B O T I C S  · C O N T R O L  · D Y N A M I C S  · M O D E L L I N G  · A I
             </p>
 
             {/* Main heading */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-4 text-neutral-900 dark:text-slate-50">
-              Robotics | Controls | Dynamics | Machine Learning | Data Driven Modelling
+            <h1 className="text-3xl sm:text-4xl md:text-4xl font-semibold tracking-tight mb-4 text-neutral-900 dark:text-slate-50">
+              Robotics | Controls | Dynamics | Machine Learning Data Driven Modelling
             </h1>
 
             {/* Description */}
