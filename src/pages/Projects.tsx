@@ -141,7 +141,7 @@ export default function Projects() {
 
           {/* Year-separated list, year shown once per group (right-aligned) */}
           <div className="space-y-10">
-            {sortedYears.map((year, idx) => (
+            {sortedYears.map((year) => (
               <section
                 key={year}
                 className="pt-6 border-t border-neutral-200 dark:border-neutral-800"
