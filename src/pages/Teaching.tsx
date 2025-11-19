@@ -408,7 +408,7 @@ export default function Teaching() {
                           </a>
                           ,{" "}
                           <a
-                            href="/Teaching/ME5124"
+                            href="https://github.com/thilinahwe/thilinahwe.github.io/tree/main/public/Teaching/ME5124"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sky-600 dark:text-sky-400 hover:underline"
