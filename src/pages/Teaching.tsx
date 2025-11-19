@@ -401,7 +401,7 @@ export default function Teaching() {
                           <a
                             href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/ME5124/ME5124_Automation_and_Control_of_Manufacturing_Systems_%E2%80%93_Arduino_Lab_Examples.ipynb"
                             target="_blank"
-                            rel="noopener noreferrer"
+                            rel="noreferrer"
                             className="text-sky-600 dark:text-sky-400 hover:underline"
                           >
                             Arduino lab examples (notebook)
@@ -421,7 +421,7 @@ export default function Teaching() {
                           <a
                             href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/ME5124/ME5124_Automation_and_Control_of_Manufacturing_Systems_%E2%80%93_PLC_Lab_Examples.ipynb"
                             target="_blank"
-                            rel="noopener noreferrer"
+                            rel="noreferrer"
                             className="text-sky-600 dark:text-sky-400 hover:underline"
                           >
                             PLC lab examples (notebook)
