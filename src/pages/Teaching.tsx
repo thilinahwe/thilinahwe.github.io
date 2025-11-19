@@ -390,14 +390,18 @@ export default function Teaching() {
 
                   <ul className="space-y-1.5 list-disc pl-4 text-sm text-neutral-700 dark:text-neutral-300">
                     <li>
-                      <span className="font-medium">ME5124 – Automation and Control of Manufacturing Systems</span>
+                      <span className="font-medium">
+                        ME5124 – Automation and Control of Manufacturing Systems
+                      </span>
 
                       <ul className="mt-1 space-y-1 list-disc pl-4 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
 
                         {/* Arduino lab notebook */}
                         <li>
                           <a
-                            href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/ME5124/ME5124_Automation_and_Control_of_Manufacturing_Systems_–_Arduino_Lab_Examples.ipynb"
+                            href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/ME5124/ME5124_Automation_and_Control_of_Manufacturing_Systems_%E2%80%93_Arduino_Lab_Examples.ipynb"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-sky-600 dark:text-sky-400 hover:underline"
                           >
                             Arduino lab examples (notebook)
@@ -405,26 +409,19 @@ export default function Teaching() {
                           ,{" "}
                           <a
                             href="/Teaching/ME5124"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-sky-600 dark:text-sky-400 hover:underline"
                           >
                             Arduino codes
                           </a>
                         </li>
-
-                        {/* Arduino Codes folder */}
-                        <li>
-                          <a
-                            href="/Teaching/ME5124"
-                            className="text-sky-600 dark:text-sky-400 hover:underline"
-                          >
-                            Arduino codes
-                          </a>
-                        </li>
-
                         {/* PLC lab notebook */}
                         <li>
                           <a
-                            href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/ME5124/ME5124_Automation_and_Control_of_Manufacturing_Systems_–_PLC_Lab_Examples.ipynb"
+                            href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/blob/main/public/Teaching/ME5124/ME5124_Automation_and_Control_of_Manufacturing_Systems_%E2%80%93_PLC_Lab_Examples.ipynb"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-sky-600 dark:text-sky-400 hover:underline"
                           >
                             PLC lab examples (notebook)
