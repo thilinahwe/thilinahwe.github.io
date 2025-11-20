@@ -413,7 +413,7 @@ export default function Teaching() {
                             rel="noopener noreferrer"
                             className="text-sky-600 dark:text-sky-400 hover:underline"
                           >
-                            Arduino codes Repo
+                            Arduino codes (GitHub)
                           </a>
                         </li>
                         {/* PLC lab notebook */}
