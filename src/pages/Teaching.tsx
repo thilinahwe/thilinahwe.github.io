@@ -404,7 +404,7 @@ export default function Teaching() {
                             rel="noreferrer"
                             className="text-sky-600 dark:text-sky-400 hover:underline"
                           >
-                            Arduino lab examples (notebook)
+                            Arduino examples (notebook)
                           </a>
                           ,{" "}
                           <a
@@ -413,7 +413,7 @@ export default function Teaching() {
                             rel="noopener noreferrer"
                             className="text-sky-600 dark:text-sky-400 hover:underline"
                           >
-                            Arduino codes
+                            Arduino codes Repo
                           </a>
                         </li>
                         {/* PLC lab notebook */}
