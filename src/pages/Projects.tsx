@@ -134,8 +134,7 @@ export default function Projects() {
             <p className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 max-w-3xl">
               A selection of ongoing and past projects spanning soft robotics,
               robust and adaptive control, assistive devices, and high-throughput
-              radiochemistry automation. I plan to add animations, figures, and
-              links to publications and GitHub repositories over time.
+              radiochemistry automation.
             </p>
           </header>
 
