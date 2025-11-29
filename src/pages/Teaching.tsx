@@ -211,7 +211,7 @@ export default function Teaching() {
                       <ul className="pl-5 space-y-1 text-sky-700 dark:text-sky-300 list-disc">
                         <li>
                           <a
-                            href="/Teaching/ME2021-Lecturers.pdf"
+                            href="/Teaching/ME2021/ME2021-Lectures.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:underline"
@@ -221,7 +221,7 @@ export default function Teaching() {
                         </li>
                         <li>
                           <a
-                            href="/Teaching/ME2021-Tutorials.pdf"
+                            href="/Teaching/ME2021/ME2021-Tutorials.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:underline"
@@ -236,7 +236,7 @@ export default function Teaching() {
                       <ul className="pl-5 space-y-1 text-sky-700 dark:text-sky-300 list-disc">
                         <li>
                           <a
-                            href="/Teaching/ME2031 - ED Assignments.pdf"
+                            href="/Teaching/ME2031/ME2031-ED-Assignments.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:underline"
@@ -246,7 +246,7 @@ export default function Teaching() {
                         </li>
                         <li>
                           <a
-                            href="/Teaching/ME2031 - ED Labs.pdf"
+                            href="/Teaching/ME2031/ME2031-ED-Lab.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:underline"
@@ -256,7 +256,7 @@ export default function Teaching() {
                         </li>
                         <li>
                           <a
-                            href="/Teaching/ME2031 - ED Module Outline - 2019.pdf"
+                            href="/Teaching/ME2031/ME2031-ED-Module-Outline-2019.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:underline"
@@ -271,7 +271,7 @@ export default function Teaching() {
                       <ul className="pl-5 space-y-1 text-sky-700 dark:text-sky-300 list-disc">
                         <li>
                           <a
-                            href="/Teaching/ME3531 Notes.pdf"
+                            href="/Teaching/ME3531/ME3531-Notes.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:underline"
@@ -281,7 +281,7 @@ export default function Teaching() {
                         </li>
                         <li>
                           <a
-                            href="/Teaching/ME3531 Tutorials.pdf"
+                            href="/Teaching/ME3531/ME3531-Tutorials.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:underline"
@@ -291,7 +291,7 @@ export default function Teaching() {
                         </li>
                         <li>
                           <a
-                            href="/Teaching/ME3531 Final Examination-2019-June.pdf"
+                            href="/Teaching/ME3531/ME3531-Final-Examination-2019-June.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:underline"
