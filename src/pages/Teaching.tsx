@@ -229,6 +229,16 @@ export default function Teaching() {
                             Tutorial Set (PDF)
                           </a>
                         </li>
+                        <li>
+                          <a
+                            href="https://nbviewer.org/github/thilinahwe/thilinahwe.github.io/raw/main/public/Teaching/ME2021/ME2021_Lecture01_2019.ipynb"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover:underline"
+                          >
+                            Animations &amp; Simulations (Jupyter Notebook)
+                          </a>
+                        </li>
                       </ul>
                     </li>
                     <li>
