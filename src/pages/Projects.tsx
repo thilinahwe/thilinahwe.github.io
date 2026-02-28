@@ -97,7 +97,7 @@ const projects: Project[] = [
     papers: [
     {
       title: "Modular Artificial Shoulder Prosthesis",
-      href="/Research/DevelopmentOfAnActiveShoulderProsthesisWithLowLevelControlValidation.pdf"
+      url: "/Research/DevelopmentOfAnActiveShoulderProsthesisWithLowLevelControlValidation.pdf",
     },
   ],
   },
