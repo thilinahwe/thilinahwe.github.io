@@ -10,13 +10,14 @@ type Project = {
   summary: string;
   highlights: string[];
   image?: string; // future: per-project image / animation
+  papers?: { title: string; url: string }[];
 };
 
 const projects: Project[] = [
   {
     title: "High-throughput droplet radiochemistry platform for PET",
     role: "Postdoctoral Research — van Dam Lab, UCLA / CNSI",
-    years: "2024 – Present",
+    years: "2025 – Present",
     location: "Los Angeles, CA",
     tags: ["High-throughput radiochemistry", "Robotics", "Automation", "Imaging"],
     summary:
@@ -93,6 +94,12 @@ const projects: Project[] = [
       "Implemented basic control strategies and validated joint-level performance on a benchtop prototype.",
       "Presented results in international conferences focusing on modeling, identification, and control.",
     ],
+    papers: [
+    {
+      title: "Modular Artificial Shoulder Prosthesis",
+      url: "/Research/Development_of_Active_Shoulder_Prosthesis.pdf",
+    },
+  ],
   },
 ];
 
@@ -157,7 +164,7 @@ export default function Projects() {
                     <article key={project.title} className="py-1">
                       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
                         {/* LEFT: image / animation placeholder (Vindula-style) */}
-                        <div className="w-full sm:w-40 h-28 sm:h-28 rounded-lg overflow-hidden bg-neutral-200/70 dark:bg-neutral-800/70 flex items-center justify-center">
+                        <div className="w-full sm:w-1/4 aspect-video rounded-lg overflow-hidden bg-neutral-200/70 dark:bg-neutral-800/70 flex items-center justify-center">
                           {project.image ? (
                             <img
                               src={project.image}
@@ -214,6 +221,27 @@ export default function Projects() {
                               <li key={i}>{h}</li>
                             ))}
                           </ul>
+                          {project.papers?.length ? (
+                            <div className="mt-2 space-y-1">
+                              <p className="text-[11px] uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                                Publications
+                              </p>
+                              <ul className="space-y-1">
+                                {project.papers.map((paper) => (
+                                  <li key={paper.url}>
+                                    <a
+                                      href={paper.url}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-xs sm:text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                                    >
+                                      {paper.title} →
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ) : null}                         
                         </div>
                       </div>
                     </article>
