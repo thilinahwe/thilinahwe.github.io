@@ -83,10 +83,11 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Modular artificial shoulder prosthesis",
+    title: "Modular Artificial Shoulder Prosthesis",
     role: "Undergraduate Thesis — University of Moratuwa",
+    role: "Conference Paper - MIC 2017"
     years: "2015 – 2016",
-    tags: ["Upper-limb prosthetics", "Modular design", "Control validation"],
+    tags: ["Upper-limb prosthetics", "Modular design", "Control validation", "EMG"],
     summary:
       "Designed and implemented a modular artificial shoulder prosthetic device with low-level control validation.",
     highlights: [
@@ -94,12 +95,13 @@ const projects: Project[] = [
       "Implemented basic control strategies and validated joint-level performance on a benchtop prototype.",
       "Presented results in international conferences focusing on modeling, identification, and control.",
     ],
-    papers: [
-    {
-      title: "Modular Artificial Shoulder Prosthesis",
-      url: "/Research/DevelopmentOfAnActiveShoulderProsthesisWithLowLevelControlValidation.pdf",
-    },
-  ],
+    papers: [ 
+      { title: "Modular Artificial Shoulder Prosthesis Conference Paper", 
+        url: "/Research/DevelopmentOfAnActiveShoulderProsthesisWithLowLevelControlValidation.pdf", 
+        title: "Undergraduate Thesis: Modular Artificial Shoulder Prosthesis", 
+        url: "/Research/University_of_Moratuwa_UG_Thesis.pdf", 
+      }, 
+    ],
   },
 ];
 
