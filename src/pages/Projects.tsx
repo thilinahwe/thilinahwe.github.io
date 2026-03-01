@@ -10,6 +10,7 @@ type Project = {
   summary: string;
   highlights: string[];
   image?: string; // future: per-project image / animation
+  video?: string;
   papers?: { title: string; url: string }[];
 };
 
@@ -84,10 +85,10 @@ const projects: Project[] = [
   },
   {
     title: "Modular Artificial Shoulder Prosthesis",
-    role: "Undergraduate Thesis — University of Moratuwa",
-    role: "Conference Paper - MIC 2017"
+    role: "Undergraduate Thesis & Conference Paper — University of Moratuwa / MIC 2017",
     years: "2015 – 2016",
     tags: ["Upper-limb prosthetics", "Modular design", "Control validation", "EMG"],
+    video: "/Research/Shoulder_Prosthesis_Demo.mp4",
     summary:
       "Designed and implemented a modular artificial shoulder prosthetic device with low-level control validation.",
     highlights: [
@@ -96,9 +97,11 @@ const projects: Project[] = [
       "Presented results in international conferences focusing on modeling, identification, and control.",
     ],
     papers: [ 
-      { title: "Modular Artificial Shoulder Prosthesis Conference Paper", 
+      { title: "Conference Paper", 
         url: "/Research/DevelopmentOfAnActiveShoulderProsthesisWithLowLevelControlValidation.pdf", 
-        title: "Undergraduate Thesis: Modular Artificial Shoulder Prosthesis", 
+      },
+      {
+        title: "Undergraduate Thesis", 
         url: "/Research/University_of_Moratuwa_UG_Thesis.pdf", 
       }, 
     ],
@@ -167,7 +170,17 @@ export default function Projects() {
                       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
                         {/* LEFT: image / animation placeholder (Vindula-style) */}
                         <div className="w-full sm:w-1/4 aspect-video rounded-lg overflow-hidden bg-neutral-200/70 dark:bg-neutral-800/70 flex items-center justify-center">
-                          {project.image ? (
+                          {project.video ? (
+                            <video
+                              src={project.video}
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                              preload="metadata"
+                              className="w-full h-full object-cover"
+                            />
+                          ) : project.image ? (
                             <img
                               src={project.image}
                               alt={project.title}
