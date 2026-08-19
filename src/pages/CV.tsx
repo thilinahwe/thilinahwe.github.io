@@ -6,7 +6,7 @@ export default function CV() {
     <>
       <HeadMeta
         title="Curriculum Vitae | Thilina Weerakkody"
-        description="Curriculum Vitae of Dr. Thilina H. Weerakkody: robotics and control for medical applications, high-throughput radiochemistry, adaptive control, and mechanical design."
+        description="Curriculum Vitae of Dr. Thilina H. Weerakkody: robotics, nonlinear dynamics, multibody systems, advanced control, physics-informed machine learning, and intelligent automation."
       />
 
       <section className="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50">
@@ -49,10 +49,12 @@ export default function CV() {
               </div>
 
               <p className="text-xs text-neutral-600 dark:text-neutral-500">
-                The 1-page emphasizes applied robotics, control, and software
-                skills suited for engineering and data roles. The extended
-                Curriculum Vitae includes the full publication list and service
-                records.
+                <p className="text-xs text-neutral-600 dark:text-neutral-500">
+                  The résumé provides a concise overview of my academic, research, and
+                  technical experience. The extended Curriculum Vitae includes detailed
+                  publications, research experience, teaching, professional service, and
+                  other academic activities.
+                </p>
               </p>
             </div>
             <div className="border-t border-neutral-200 dark:border-neutral-800 my-6"></div>
@@ -63,6 +65,22 @@ export default function CV() {
             <h2 className="text-lg sm:text-2xl font-semibold text-neutral-900 dark:text-neutral-50">
               Employment History
             </h2>
+            <div>
+              <div className="flex flex-wrap justify-between gap-2">
+                <span className="font-semibold">
+                  Senior Lecturer (Grade II), Department of Mechanical Engineering -
+                  University of Moratuwa, Sri Lanka.
+                </span>
+                <span className="text-neutral-500 dark:text-neutral-400">
+                  2026–Present
+                </span>
+              </div>
+
+              <div className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400">
+                Teaching and research in control systems, robotics, nonlinear dynamics,
+                multibody systems, mechatronics, and intelligent systems.
+              </div>
+            </div>
             <div className="space-y-5 text-sm sm:text-base text-neutral-700 dark:text-neutral-300">
               <div>
                 <div className="flex flex-wrap justify-between gap-2">
@@ -70,7 +88,7 @@ export default function CV() {
                     Postdoctoral Scholar, California NanoSystems Institute (CNSI) - University of California, Los Angeles, CA.
                   </span>
                   <span className="text-neutral-500 dark:text-neutral-400">
-                    2024–Present
+                    2024–2026
                   </span>
                 </div>
                 <div className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400">
@@ -218,7 +236,7 @@ export default function CV() {
                     Design and Control of Artificial Muscles for Robotic
                     Applications
                   </em>
-                  . Advisors: Dr. Caterina Lamuta.
+                  . Advisors: Dr. Caterina Lamuta and Dr. Venanzio Cichella.
                 </div>
               </div>
 

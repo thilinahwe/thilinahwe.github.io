@@ -52,7 +52,7 @@ export default function About() {
 
                 {/* Main heading */}
                 <h1 className="text-3xl sm:text-4xl md:text-4xl font-semibold tracking-tight mb-4 text-neutral-900 dark:text-slate-50">
-                  Thilina H. Weerakkody
+                  Thilina H. Weerakkody, Ph.D. 
                 </h1>
 
                 {/* One-liner description */}

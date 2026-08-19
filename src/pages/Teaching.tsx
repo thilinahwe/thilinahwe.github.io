@@ -28,7 +28,7 @@ export default function Teaching() {
               T E A C H I N G
             </p>
             <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">
-              Teaching experience & academic training
+              Teaching Experience & Academic Training
             </h1>
 
             <div className="flex flex-wrap gap-3">
@@ -58,6 +58,82 @@ export default function Teaching() {
 
           {/* Teaching experience sections */}
           <div className="space-y-10">
+  
+            {/* University of Moratuwa - Senior Lecturer */}
+            <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
+              <h2 className="text-xl sm:text-2xl font-semibold mb-3">
+                University of Moratuwa, Sri Lanka - Department of Mechanical Engineering
+                <a
+                  href="https://uom.lk/mech"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="
+                    inline-flex items-center justify-center
+                    ml-1.5 align-middle
+                    text-neutral-500 hover:text-sky-500
+                    dark:text-neutral-400 dark:hover:text-sky-300
+                    transition
+                  "
+                  style={{ position: "relative", top: "1px" }}   // lowers icon slightly
+                  title="Open Department Website"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-4 w-4"
+                  >
+                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z"/>
+                  </svg>
+                </a>
+              </h2>
+              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-4">
+                Senior Lecturer · 2026–Present
+              </p>
+
+              <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 mb-4">
+                <li>
+                  <span className="font-semibold">
+                    ME3013/3241: Control Systems
+                  </span>{" "}
+                  — Lectures/ Tutorial / Quizzes / Homework on Classic Control Systems with the aid of MATLAB/Simulink and Python for mathematical
+                  modeling.
+                </li>
+                <li className="text-neutral-600 dark:text-neutral-400">
+                  <span className="font-semibold">Offered:</span> Fall 2026.
+                </li>
+              </ul>
+
+              <div className="space-y-3 mb-4">
+                <div>
+                  <div className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-1">
+                    Lecture materials (Fall 2026)
+                  </div>
+                  <ul className="text-sm text-sky-700 dark:text-sky-300 space-y-1 list-disc pl-4">
+                    <li>
+                      <a
+                        href="/Teaching/Control_Systems"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="hover:underline"
+                      >
+                        Lecture notes, tutorials, and assignments (PDFs and MATLAB/Simulink files)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p className="text-sm text-neutral-700 dark:text-neutral-300">
+                I teach Control Systems with an emphasis on connecting fundamental control
+                theory to practical engineering systems. The course integrates mathematical
+                modeling, transfer-function analysis, system response and stability, root
+                locus, frequency-domain methods, and classical controller design with
+                MATLAB/Simulink-based analysis and simulation. Tutorials, quizzes, and
+                simulation-based assignments are used to reinforce analytical concepts and
+                develop practical control-system modeling and design skills.
+              </p>
+            </section>
             {/* University of Iowa */}
             <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
@@ -341,7 +417,7 @@ export default function Teaching() {
             {/* University of Moratuwa — GTA & Research Assistant Teaching */}
             <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
-                University of Moratuwa, Sri Lanka — Mechanical Engineering
+                University of Moratuwa, Sri Lanka - Department of Mechanical Engineering
                 <a
                   href="https://uom.lk/mech"
                   target="_blank"
@@ -495,88 +571,84 @@ export default function Teaching() {
               </div>
             </section>
 
-            {/* Mentoring & supervision */}
+            {/* Student supervision & mentoring */}
             <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 dark:border-neutral-800 dark:bg-neutral-900/40 dark:shadow-none">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
-                Mentoring &amp; supervision
+                Student supervision &amp; mentoring
               </h2>
 
-              <p className="text-sm text-neutral-700 dark:text-neutral-300 mb-3">
-                Across my roles at the University of Iowa, the University of Moratuwa,
-                and UCLA, I have mentored and trained more than 18 students
-                (undergraduate students, graduate students, and visiting scholars) in
-                project-based and research workflows involving soft robotics, control,
-                mechatronics, artificial muscles, and experimental methods. In
-                addition, I currently mentor one undergraduate researcher at UCLA and
-                have provided technical training to external collaborators on
-                multi-institution engineering and medical robotics projects.
-              </p>
-
-              <div className="mb-4">
-                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
-                  Academic mentoring (University of Iowa, University of Moratuwa, UCLA)
+              {/* Current postgraduate supervision */}
+              <div className="mb-5">
+                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                  Postgraduate research supervision
                 </h3>
+
                 <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 list-disc pl-4">
                   <li>
-                    Mentored 12 students in the SMMS Lab (UIowa) on SMA/TCAM modeling,
-                    robust/adaptive control design, mechatronics integration, and
-                    experimental workflows.
-                  </li>
-                  <li>
-                    Supervised undergraduate and graduate project teams in automation,
-                    mechatronics, embedded control, mechanism design, and data
-                    acquisition.
-                  </li>
-                  <li>
-                    Guided capstone and independent study projects involving prosthetics,
-                    soft robotics, and artificial muscle systems.
-                  </li>
-                  <li>
-                    Current mentoring of one undergraduate student at UCLA on robotic
-                    imaging and high-throughput radiochemistry system development.
+                    Currently supervising one MPhil student in robotics, nonlinear control,
+                    and intelligent systems at the University of Moratuwa.
                   </li>
                 </ul>
               </div>
 
-              <div className="mb-4">
-                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
-                  Industry &amp; startup mentoring (Yantra – UIowa Carver College of
-                  Medicine)
+              {/* Current undergraduate supervision */}
+              <div className="mb-5">
+                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                  Undergraduate design &amp; research project supervision
                 </h3>
+
                 <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 list-disc pl-4">
                   <li>
-                    Trained three research engineers from Yantra Life Sciences (UIowa
-                    Med School startup) on hardware setup, TCAM-based actuation
-                    systems, control software, and device operation workflows for
-                    product development.
+                    Currently supervising five undergraduate design and research project
+                    groups comprising 15 students at the University of Moratuwa.
                   </li>
                   <li>
-                    Provided ongoing technical guidance on mechanism design, hardware
-                    configuration, and experimental validation for the medical-device
-                    development pipeline.
+                    Projects span robotics, control systems, intelligent mechatronics,
+                    compliant mechanisms, embedded systems, and automation.
                   </li>
                 </ul>
               </div>
 
-              <div className="mb-4">
-                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
-                  Cross-department research mentoring (Toxicology × Engineering project)
+              {/* Previous academic mentoring */}
+              <div className="mb-5">
+                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                  Previous academic mentoring
                 </h3>
+
                 <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 list-disc pl-4">
                   <li>
-                    Mentored two undergraduate students on the automated immunolabeling
-                    system (a multidisciplinary collaboration described in my CV’s
-                    patent section), including CAD design, control logic, prototyping,
-                    and iterative development.
+                    Mentored 12 students in the SMMS Lab at the University of Iowa on
+                    SMA/TCAM modeling, robust and adaptive control, mechatronics integration,
+                    and experimental workflows.
+                  </li>
+                  <li>
+                    Mentored undergraduate researchers at UCLA on robotic imaging,
+                    high-throughput radiochemistry, and experimental automation.
+                  </li>
+                  <li>
+                    Mentored two undergraduate students on an automated immunolabeling
+                    system involving CAD design, control logic, prototyping, and system
+                    integration.
                   </li>
                 </ul>
               </div>
 
-              {/* <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-3">
-                A detailed list of mentored students and collaborative projects can be
-                provided upon request in application materials.
-              </p> */}
+              {/* Industry mentoring */}
+              <div>
+                <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                  Industry &amp; technical mentoring
+                </h3>
+
+                <ul className="text-sm text-neutral-800 dark:text-neutral-200 space-y-2 list-disc pl-4">
+                  <li>
+                    Trained three research engineers on artificial-muscle actuation,
+                    control software, hardware integration, and experimental validation
+                    for medical-device development.
+                  </li>
+                </ul>
+              </div>
             </section>
+            
           </div>
         </div>
       </section>

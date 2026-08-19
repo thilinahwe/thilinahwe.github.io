@@ -115,6 +115,12 @@ export default function Services() {
                 </h3> */}
                 <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
                   <li>
+                    <em>“Modeling, Dynamics, and Control of Robotic Systems for Physical and Biomedical Applications”</em>,  
+                    Department of Mechanical Engineering, University of Moratuwa, Sri Lanka,
+                    <span className="text-neutral-500 dark:text-neutral-400"> April 10, 2026.</span>
+                  </li>
+
+                  <li>
                     <em>“Design and Control of Artificial Muscles for Robotic Applications”</em>,  
                     Mechanical Engineering Graduate Seminar, University of Iowa,  
                     <span className="text-neutral-500 dark:text-neutral-400"> Feb 29, 2024.</span>
@@ -130,6 +136,19 @@ export default function Services() {
             </section>
           </section>
 
+          {/* Department and university service */}
+        <section className="space-y-4">
+          <h2 className="text-lg sm:text-2xl font-semibold text-neutral-900 dark:text-neutral-50">
+            Department &amp; University Service
+          </h2>
+
+          <div className="rounded-2xl border border-neutral-200 bg-white/80 p-5 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
+            <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
+              <li>Special Term Coordinator 2026/27, Department of Mechanical Engineering, University of Moratuwa.</li>
+            </ul>
+          </div>
+        </section>
+
           {/* Leadership, volunteering & outreach */}
           <section className="space-y-4">
             <h2 className="text-lg sm:text-2xl font-semibold text-neutral-900 dark:text-neutral-50">
@@ -138,9 +157,43 @@ export default function Services() {
 
             <div className="rounded-2xl border border-neutral-200 bg-white/80 p-5 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
               <h3 className="text-sm sm:text-base font-semibold text-neutral-900 dark:text-neutral-50 mb-2">
-                Event adjudication &amp; exhibitions
+                Academic evaluation, conference service &amp; outreach
               </h3>
               <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
+          
+                <li>
+                  Panel of Judges,{" "}
+                  <span className="font-semibold">
+                    Automation, Electrical and Biomedical Engineering Technical Sessions
+                  </span>
+                  , 19th International Research Conference, General Sir John Kotelawala
+                  Defence University (KDU-IRC 2026), August 21, 2026.
+                </li>
+
+                <li>
+                  Judge,{" "}
+                  <span className="font-semibold">
+                    ROSCO&apos;26 Inter-University Robotics Competition
+                  </span>
+                  , General Sir John Kotelawala Defence University, August 15, 2026.
+                </li>
+
+                <li>
+                  Session Co-Chair,{" "}
+                  <span className="font-semibold">
+                    Mechanical Systems, MERCon 2026
+                  </span>
+                  , Moratuwa Engineering Research Conference, August 13, 2026.
+                </li>
+
+                <li>
+                  External Evaluator,{" "}
+                  <span className="font-semibold">
+                    Final-Year Projects in Electronic Engineering
+                  </span>
+                  , University of Sri Jayewardenepura, July 8, 2026.
+                </li>
+
                 <li>
                   Adjudicator / panelist,{" "}
                   <span className="font-semibold">Robot Battle 2018</span>, Uva
