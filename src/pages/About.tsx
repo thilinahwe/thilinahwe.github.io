@@ -177,7 +177,7 @@ export default function About() {
                 >
                   Robotics Reports
                 </a>.</li>
-              <li>• Jul 2025 - Our U.S. patent application "Semi-Automated Immunolabeling Systems and Associated Devices and Methods" is published.</li>
+              <li>• Jul 2025 - Our U.S. patent application "Semi-Automated Immunolabeling Systems and Associated Devices and Methods" is published and is currently patent pending.</li>
               <li>• Oct 2024 - Joined UCLA as a Postdoctoral Scholar at the California NanoSystems Institute (CNSI).</li>
               <li>• Sep 2024 - Defended my Ph.D.{" "}
                 <a
