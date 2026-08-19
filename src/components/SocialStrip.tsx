@@ -1,5 +1,5 @@
 // src/components/SocialBar.tsx
-import { FaGithub, FaLinkedinIn, FaOrcid } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaOrcid, FaUniversity } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -34,6 +34,11 @@ const socialLinks: SocialLink[] = [
     label: "ORCID",
     href: "https://orcid.org/0000-0003-0985-0573",
     Icon: FaOrcid, // replace with actual X icon later if needed
+  },
+  {
+    label: "University of Moratuwa",
+    href: "https://uom.lk/mech/staff/academic-staff",
+    Icon: FaUniversity, // replace with actual X icon later if needed
   },
 ];
 

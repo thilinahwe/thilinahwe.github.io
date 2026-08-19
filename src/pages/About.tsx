@@ -47,8 +47,7 @@ export default function About() {
                     mb-3
                   "
                 >
-                  Robotics · Control · Dynamics · Data-driven Modelling · Machine
-                  Learning · AI
+                  Robotics · Control · Dynamics · Physics-Informed Modelling 
                 </p>
 
                 {/* Main heading */}
@@ -57,14 +56,13 @@ export default function About() {
                 </h1>
 
                 {/* One-liner description */}
-                
+               
                 <p className="text-sm sm:text-base md:text-base text-neutral-700 dark:text-slate-200 mb-6 max-w-4xl text-justify">
-                  Mechanical Engineer &amp; Postdoctoral Scholar at UCLA working
-                  at the intersection of robotics, underwater robotic systems,
-                  advanced control, and AI/ML-driven design. My work combines
-                  physics-informed machine learning with real-world system design
-                  across underwater systems, medical robotics, healthcare
-                  technologies, and high-throughput experimental automation.
+                  Mechanical Engineer and researcher working at the intersection of robotics, nonlinear dynamics, 
+                  advanced control, and intelligent systems. My research integrates physics-based modeling, 
+                  control theory, and machine learning to develop robotic and automated systems, with applications 
+                  spanning soft and bioinspired robotics, medical technologies, and intelligent automation.
+
                 </p>
 
                 {/* Buttons */}
@@ -97,24 +95,24 @@ export default function About() {
                   <div className="font-semibold text-neutral-900 dark:text-slate-100">
                     Core areas
                   </div>
-                  <div>Robotics &amp; mechatronics</div>
-                  <div>Soft actuators (SMA, TCAM, TSAM)</div>
-                  <div>Control design &amp; 𝓛₁ adaptive control</div>
+                  <div>Robotics &amp; intelligent mechatronic systems</div>
+                  <div>Nonlinear dynamics &amp; multibody systems</div>
+                  <div>Robust, adaptive &amp; model predictive control</div>
+                  <div>Soft &amp; bioinspired robotic systems</div>
                   <div>Physics-informed &amp; data-driven modelling</div>
-                  <div>Underwater &amp; medical robotic systems</div>
-                  <div>High-throughput experimental platforms</div>
+                  <div>Embedded systems &amp; intelligent automation</div>
                 </div>
 
                 <div className="space-y-1">
                   <div className="font-semibold text-neutral-900 dark:text-slate-100">
                     Tools
                   </div>
-                  <div>Python (SciPy, NumPy, PyTorch/TensorFlow)</div>
-                  <div>MATLAB / Simulink (control &amp; dynamics)</div>
-                  <div>ROS / ROS2, LabVIEW, embedded C/C++</div>
-                  <div>SolidWorks, Fusion 360, CAD-based design</div>
-                  <div>MuJoCo, Gazebo, simulation &amp; visualization</div>
-                  <div>Git / GitHub for reproducible workflows</div>
+                  <div>MATLAB / Simulink / Simscape</div>
+                  <div>Python (NumPy, SciPy, PyTorch, TensorFlow)</div>
+                  <div>ROS / ROS 2, Gazebo, MuJoCo</div>
+                  <div>Embedded C/C++, LabVIEW &amp; DAQ systems</div>
+                  <div>SolidWorks, Fusion 360 &amp; CAD/CAE tools</div>
+                  <div>Git / GitHub &amp; reproducible research workflows</div>
                 </div>
               </div>
             </div>
@@ -140,30 +138,37 @@ export default function About() {
               About me
             </h2>
             <p className="text-sm sm:text-base md:text-base text-neutral-700 dark:text-slate-200 mb-6 max-w-4xl text-justify">
-              I am a mechanical engineer and postdoctoral researcher at UCLA experience in developing intelligent robotic 
-              systems that combine advanced control, simulations, and modern machine learning. 
-              My work focuses on building reliable, scalable, and data-efficient autonomous systems—ranging 
-              from underwater robots to high-throughput experimental automation—where physics-based modeling 
-              and AI-driven decision making operate together in real time. I have end-to-end experience across 
-              modelling, simulation, and deployment, including robust / 𝓛₁ adaptive control of 
-              nonlinear soft actuators (SMA, TCAM, TSAM), dynamic modelling of complex mechanisms, and 
-              integration of physics-informed and data-driven learning pipelines for control and prediction. 
-              Broadly, I am interested in robotics that leverages both physical priors and learned structure to 
-              achieve strong generalization, safe closed-loop behavior, and high-performance interaction in 
-              real-world environments. I enjoy working on interdisciplinary problems where control theory, 
-              machine learning, and system design converge to produce practical, deployable autonomy.
+             I am a Senior Lecturer in the Department of Mechanical Engineering at the University of Moratuwa, Sri Lanka, where 
+             I also received my B.Sc. Engineering (Honors) degree in Mechanical Engineering. I received my Ph.D. in Mechanical 
+             Engineering from the University of Iowa, USA, where my research focused on soft robotics, nonlinear dynamics, and 
+             the control of artificial muscles for robotic applications, with support from DARPA, ONR, NASA, and NSF. Following 
+             my Ph.D., I worked as a Postdoctoral Scholar at the California NanoSystems Institute (CNSI) at the University of 
+             California, Los Angeles (UCLA), USA, contributing to NIH- and ARPA-H-supported research on robotic automation in 
+             collaboration with Stanford Medicine. My research interests include robotics, nonlinear dynamics, multibody systems, 
+             robust and adaptive control, model predictive control, bioinspired robotic systems, physics-informed machine learning, 
+             embedded systems, and intelligent automation.
             </p>
           </div>
 
           {/* News (single column) */}
-          <div className="max-w-4xl space-y-3">
+          <div className="max-w-6xl space-y-3">
             <h2 className="text-sm font-semibold tracking-wide uppercase text-neutral-800 dark:text-neutral-100">
               News
             </h2>
             <ul className="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
-              <li>• Sep 2025 - Our paper "Robust Control of Shape Memory Alloys for Assistive Robotics Applications" is accepted.</li>
-              <li>• Oct 2024 - Joined UCLA as a Postdoctoral Research Scholar in the van Dam Lab.</li>
-              <li>• Aug 2025 - Our paper "Bioinspired Active Vortex Generators for Underwater Flow Control" is published in 
+              <li>• Jul 2026 - Our paper "Investigation of High-throughput Non-destructive Methods to Measure Radioactivity in Microliter Droplets" is published in IEEE Transactions on Radiation and Plasma Medical Sciences.</li>
+              <li>• Apr 2026 - Joined the Department of Mechanical Engineering, University of Moratuwa, as a Senior Lecturer.</li>
+              <li>• Mar 2026 - Our paper "Robust Control of Shape Memory Alloys for Assistive Robotics Applications" is published in{" "}
+                <a
+                  href="https://link.springer.com/article/10.1007/s40830-025-00596-z"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sky-600 hover:underline dark:text-sky-400 ml-1"
+                >
+                  Shape Memory and Superelasticity
+                </a>.</li>
+              <li>• Aug 2025 - Our research on bioinspired active vortex generators for underwater flow control is featured by Iowa Now.</li>
+              <li>• Aug 2025 - Our paper "Bioinspired Active Vortex Generators for Underwater Flow Control" is published in{" "}
                 <a
                   href="https://www.liebertpub.com/doi/10.1177/28350111251365627"
                   target="_blank"
@@ -171,15 +176,19 @@ export default function About() {
                   className="text-sky-600 hover:underline dark:text-sky-400 ml-1"
                 >
                   Robotics Reports
-                </a>.
-              </li>
-              <li>• Sep 2024 - I defended my PhD  
+                </a>.</li>
+              <li>• Jul 2025 - Our U.S. patent application "Semi-Automated Immunolabeling Systems and Associated Devices and Methods" is published.</li>
+              <li>• Oct 2024 - Joined UCLA as a Postdoctoral Scholar at the California NanoSystems Institute (CNSI).</li>
+              <li>• Sep 2024 - Defended my Ph.D.{" "}
                 <a
                   href="https://www.proquest.com/openview/7d8a4b68e26c6e63fb5d3188899e0581/1?pq-origsite=gscholar&cbl=18750&diss=y"
                   target="_blank"
                   rel="noreferrer"
                   className="text-sky-600 hover:underline dark:text-sky-400 ml-1"
-                >thesis</a> on Design and Control of Artificial Muscles for Robotic Applications.</li>
+                >
+                  dissertation
+                </a>{" "}
+                on "Design and Control of Artificial Muscles for Robotic Applications."</li>
             </ul>
           </div>
 
@@ -189,14 +198,16 @@ export default function About() {
               Research highlights
             </h2>
             <ul className="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
-              <li>• 𝓛₁ adaptive and robust control of highly nonlinear artificial muscles (SMA, TCAM, TSAM).</li>
-              <li>• Design and automation of robotic platforms for high-throughput droplet radiochemistry (RADBOT).</li>
-              <li>• Physics-informed and data-driven modeling for soft actuators and experimental systems.</li>
+              <li>• Advanced control of nonlinear and uncertain systems, including robust, adaptive, and model predictive control.</li>
+              <li>• Nonlinear dynamics, multibody modeling, and control of robotic and bioinspired systems.</li>
+              <li>• Design, dynamics, and control of robotic systems for uneven-terrain locomotion and mobility.</li>
+              <li>• Physics-informed and data-driven modeling for dynamics, system identification, and control.</li>
+              <li>• Design and automation of intelligent robotic, embedded, and experimental systems.</li>
             </ul>
           </div>
 
           {/* Skills */}
-          <div className="space-y-3 max-w-4xl">
+          <div className="space-y-3 max-w-6xl">
             <h2 className="text-sm font-semibold tracking-wide uppercase text-neutral-800 dark:text-neutral-100">
               Skills
             </h2>
@@ -204,28 +215,31 @@ export default function About() {
               <div>
                 <div className="font-semibold mb-1">Domains</div>
                 <ul className="space-y-1">
-                  <li>• Robotics &amp; mechatronics</li>
-                  <li>• Robust / 𝓛₁ adaptive control</li>
-                  <li>• Dynamics &amp; multibody systems</li>
-                  <li>• High-throughput experimental design</li>
+                  <li>• Robotics &amp; intelligent mechatronic systems</li>
+                  <li>• Robust, adaptive &amp; model predictive control</li>
+                  <li>• Nonlinear dynamics &amp; multibody systems</li>
+                  <li>• Physics-informed &amp; data-driven modeling</li>
                 </ul>
               </div>
+
               <div>
                 <div className="font-semibold mb-1">Software &amp; tools</div>
                 <ul className="space-y-1">
-                  <li>• Python, MATLAB/Simulink</li>
-                  <li>• ROS / ROS2, LabVIEW</li>
-                  <li>• C++, embedded control</li>
-                  <li>• SolidWorks, Fusion 360</li>
+                  <li>• MATLAB, Simulink &amp; Simscape</li>
+                  <li>• Python, PyTorch &amp; TensorFlow</li>
+                  <li>• ROS / ROS 2, Gazebo &amp; MuJoCo</li>
+                  <li>• C / C++, embedded &amp; real-time control</li>
+                  <li>• SolidWorks &amp; Fusion 360</li>
                 </ul>
               </div>
+
               <div>
                 <div className="font-semibold mb-1">Applications</div>
                 <ul className="space-y-1">
-                  <li>• Assistive &amp; wearable robotics</li>
-                  <li>• Droplet-based radiochemistry</li>
-                  <li>• Medical imaging &amp; PET workflows</li>
-                  <li>• Physics-informed ML for experiments</li>
+                  <li>• Uneven-terrain &amp; mobile robotic systems</li>
+                  <li>• Soft, bioinspired &amp; assistive robotics</li>
+                  <li>• Medical robotics &amp; intelligent automation</li>
+                  <li>• High-throughput experimental platforms</li>
                 </ul>
               </div>
             </div>
@@ -262,13 +276,25 @@ export default function About() {
 
               <div>
                 <div className="text-xs uppercase mb-1 text-neutral-500 dark:text-neutral-400">
-                  Email (UCLA)
+                  Email (UIowa)
                 </div>
                 <a
-                  href="mailto:TWeerakkody@mednet.ucla.edu"
+                  href="mailto:thilina-weerakkody@uiowa.edu"
                   className="text-sky-600 hover:underline dark:text-sky-400"
                 >
-                  TWeerakkody@mednet.ucla.edu
+                  thilina-weerakkody@uiowa.edu
+                </a>
+              </div>
+
+              <div>
+                <div className="text-xs uppercase mb-1 text-neutral-500 dark:text-neutral-400">
+                  Email (UOM)
+                </div>
+                <a
+                  href="mailto:thilinaw@uom.lk"
+                  className="text-sky-600 hover:underline dark:text-sky-400"
+                >
+                  thilinaw@uom.lk
                 </a>
               </div>
             </div>
@@ -290,8 +316,9 @@ export default function About() {
             <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mb-4">
               Additional academic and institutional profiles:
             </p>
-
+            
             <div className="flex flex-wrap gap-3">
+
               {/* ResearchGate */}
               <a
                 href="https://www.researchgate.net/profile/Thilina-Weerakkody"
@@ -314,7 +341,7 @@ export default function About() {
 
               {/* IIHR – University of Iowa */}
               <a
-                href="https://iihr.uiowa.edu/people/thilina-weerakkody/"
+                href="https://iihr.uiowa.edu/people/caterina-lamuta"
                 target="_blank"
                 rel="noreferrer"
                 className="

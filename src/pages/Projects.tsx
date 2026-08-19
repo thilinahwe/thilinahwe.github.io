@@ -82,6 +82,11 @@ const projects: Project[] = [
       "Prototyped and tested components using 3D printing and conventional manufacturing techniques.",
       "Co-authored work on adaptive feet for lower-limb prostheses in the Journal of Robotics.",
     ],
+    papers: [ 
+      { title: "Journal Review", 
+        url: "/Research/AdaptiveFootInLowerLimbProstheses.pdf", 
+      },
+    ],
   },
   {
     title: "Modular Artificial Shoulder Prosthesis",
