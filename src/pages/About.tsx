@@ -156,7 +156,11 @@ export default function About() {
               News
             </h2>
             <ul className="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
-              <li>• Jul 2026 - Our paper "Investigation of High-throughput Non-destructive Methods to Measure Radioactivity in Microliter Droplets" is published in IEEE Transactions on Radiation and Plasma Medical Sciences.</li>
+              <li>• Oct 2026 - Invited talk titled "Simulate Before You Build: How Virtual Prototyping Can Transform Ideas into Successful Inventions" at Techno 2026, organized by the Institution of Engineers, Sri Lanka (IESL), as part of the Invention Zone seminar series conducted by the Sri Lanka Inventors Commission (SLIC).</li>
+              <li>• Aug 2026 - Served as a Session Judge at the 19th International Research Conference (IRC 2026) at General Sir John Kotelawala Defence University, evaluating research in AI, machine learning, automation, and biomedical engineering.</li>
+              <li>• Aug 2026 - Served as a judge at ROSCO'26 Inter-University Robotics Competition, organized by the IMechE Student Chapter at General Sir John Kotelawala Defence University.</li>
+              <li>• Aug 2026 - Served as Session Co-Chair for Mechanical Engineering Systems at MERCon 2026 (Moratuwa Engineering Research Conference).</li>
+              <li>• Jul 2026 - Our paper "Investigation of High-throughput Non-destructive Methods to Measure Radioactivity in Microliter Droplets" is published in IEEE Transactions on Radiation and Plasma Medical Sciences. (Journal Impact Factor: 3.8, 5-Year Journal Impact Factor: 4.1).</li>
               <li>• Apr 2026 - Joined the Department of Mechanical Engineering, University of Moratuwa, as a Senior Lecturer.</li>
               <li>• Mar 2026 - Our paper "Robust Control of Shape Memory Alloys for Assistive Robotics Applications" is published in{" "}
                 <a
